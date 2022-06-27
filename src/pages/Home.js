@@ -13,7 +13,7 @@ const Home = () => {
       <div className="container">
         <div className="Home_main_text">
           <Fade bottom delay={50}>
-            <p className="Home_heading">Hi👋 I'm</p>
+            <p className="Home_heading Home_greet">Hi👋 I'm</p>
           </Fade>
           <Fade bottom delay={200}>
             <h1 className="Home_heading Heading_name">Aaditya</h1>

@@ -26,6 +26,9 @@ html {
   margin-top: 10px;
   margin-bottom: 7px;
 }
+.Home_greet {
+  font-size: 1.25rem;
+}
 
 .Home_heading_2 {
   color: #4fbdba;
@@ -46,8 +49,8 @@ html {
 
 @media (max-width: 600px) {
   .container {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .image {
     width: 0px;
