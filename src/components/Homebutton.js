@@ -3,7 +3,7 @@ import "./Homebutton.css";
 
 const Homebutton = () => {
   return (
-    <div className="Main_button">
+    <div className="main_button">
       <div class="wrapper">
         <a href="#">Learn more</a>
       </div>

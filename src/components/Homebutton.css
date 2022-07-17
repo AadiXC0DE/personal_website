@@ -1,4 +1,4 @@
-.Main_button {
+.main_button {
   margin-top: 10%;
   display: flex;
 }
@@ -14,9 +14,9 @@
   line-height: 46px;
   text-decoration: none;
   text-align: center;
-  border-radius: 50px;
-  border: 3px solid seagreen;
-  color: #4fbdba;
+  border-radius: 5px;
+  border: 3px solid #ffffff;
+  color: #47b5ff;
   font-size: 20px;
   font-family: arial;
   position: relative;
@@ -33,7 +33,7 @@
   height: 100%;
   top: -100%;
   left: 0;
-  background: #0fa5a0;
+  background: #47b5ff;
   z-index: -1;
   transition: all 0.35s;
 }
@@ -47,7 +47,7 @@
 }
 
 .wrapper > a:hover {
-  color: #fff;
+  color: black;
 }
 
 .wrapper > a:hover:before,
