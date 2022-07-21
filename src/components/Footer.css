@@ -1,0 +1,42 @@
+body {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  z-index: 100;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 2.5rem;
+  justify-content: space-between;
+}
+.right {
+  background-color: inherit;
+  color: azure;
+  margin-right: 20px;
+}
+.left {
+  margin-left: 20px;
+}
+.icons {
+  display: flex;
+  background-color: inherit;
+  list-style: none;
+  margin-top: 10px;
+}
+.icons > li {
+  background-color: inherit;
+  margin-right: 15px;
+}
+.copyright {
+  color: var(--primary-text-color);
+  background-color: inherit;
+  margin-top: 10px;
+}
+.footer > .left {
+  background-color: inherit;
+}

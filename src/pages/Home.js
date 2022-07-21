@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Home.css";
+import "../App.css";
 import main from "../assets/main_image.png";
 import Homebutton from "../components/Homebutton";
 import Verticalname from "../components/Verticalname";
 import Fade from "react-reveal/Fade";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -45,6 +46,7 @@ const Home = () => {
           <Verticalname />
         </div>
       </Fade>
+      <Footer />
     </div>
   );
 };

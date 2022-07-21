@@ -1,9 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./About.css";
+import "../App.css";
 import image from "../assets/my_image.jpg";
 import Resumebutton from "../components/Resumebutton";
 import Fade from "react-reveal/Fade";
+import Footer from "../components/Footer";
+import Verticalname from "../components/Verticalname";
 
 const About = () => {
   return (
@@ -48,6 +50,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Fade bottom delay={350} duration={1400}>
+        <div className="Vertical_text">
+          <Verticalname />
+        </div>
+      </Fade>
+      <Footer />
     </div>
   );
 };
