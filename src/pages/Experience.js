@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Experience.css";
+import "../App.css";
 import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import Verticalname from "../components/Verticalname";

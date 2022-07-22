@@ -9,7 +9,9 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <Contactform />
+      <Fade clear delay={200} duration={1200}>
+        <Contactform />
+      </Fade>
       <Fade bottom delay={350} duration={1400}>
         <div className="Vertical_text">
           <Verticalname />

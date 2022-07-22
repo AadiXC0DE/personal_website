@@ -16,16 +16,24 @@ const Footer = () => {
           <div className="right">
             <ul className="icons">
               <li>
-                <FaLinkedin />
+                <a href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/">
+                  <FaLinkedin />
+                </a>
               </li>
               <li>
-                <FaFacebookSquare />
+                <a href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/">
+                  <FaFacebookSquare />
+                </a>
               </li>
               <li>
-                <FaInstagram />
+                <a href="https://www.instagram.com/simply_being_aadi/">
+                  <FaInstagram />
+                </a>
               </li>
               <li>
-                <GrMail />
+                <a href="mailto:aadityaz2077@gmail.com">
+                  <GrMail />
+                </a>
               </li>
             </ul>
           </div>

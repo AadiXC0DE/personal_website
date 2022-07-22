@@ -40,3 +40,7 @@ body {
 .footer > .left {
   background-color: inherit;
 }
+
+.icons > li > a {
+  color: inherit;
+}

@@ -5,7 +5,9 @@ const Homebutton = () => {
   return (
     <div className="main_button">
       <div class="wrapper">
-        <a href="#">Learn more</a>
+        <a href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/">
+          Learn more
+        </a>
       </div>
     </div>
   );
