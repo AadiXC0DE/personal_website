@@ -1,6 +1,11 @@
 import React from "react";
 import "./Cards.css";
 import Fade from "react-reveal/Fade";
+import netflix from "../assets/netflix_img.png";
+import tesla from "../assets/tesla_clone.png";
+import mapty from "../assets/mapty_app.png";
+import crypto from "../assets/crypto_app.png";
+import mock from "../assets/mock.jpeg";
 
 const Cards = () => {
   return (
@@ -13,14 +18,33 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src="https://picsum.photos/500/300/?image=10"></img>
+                  <img src={netflix}></img>
                 </div>
                 <div class="card_content">
-                  <h2 class="card_title">Card Grid Layout</h2>
+                  <h2 class="card_title">Netflix Clone</h2>
                   <p class="card_text">
-                    Demo of pixel perfect pure CSS simple responsive card grid
-                    layout
+                    A webapp built with React.js and TMDB API
                   </p>
+                  <button
+                    class="btn card_btn"
+                    onClick={
+                      (window.location.href =
+                        "https://dynamic-sable-52dc19.netlify.app/")
+                    }
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src={mapty}></img>
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">Mapty APP</h2>
+                  <p class="card_text">webapp to track your workout on map</p>
                   <button class="btn card_btn">Read More</button>
                 </div>
               </div>
@@ -28,28 +52,12 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src="https://picsum.photos/500/300/?image=5"></img>
+                  <img src={crypto}></img>
                 </div>
                 <div class="card_content">
-                  <h2 class="card_title">Card Grid Layout</h2>
+                  <h2 class="card_title">NFT website on blockchain</h2>
                   <p class="card_text">
-                    Demo of pixel perfect pure CSS simple responsive card grid
-                    layout
-                  </p>
-                  <button class="btn card_btn">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img src="https://picsum.photos/500/300/?image=11"></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">Card Grid Layout</h2>
-                  <p class="card_text">
-                    Demo of pixel perfect pure CSS simple responsive card grid
-                    layout
+                    A React.js website to showcase your NFTs
                   </p>
                   <button class="btn card_btn">Read More</button>
                 </div>
@@ -59,13 +67,24 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src="https://picsum.photos/500/300/?image=14"></img>
+                  <img src={tesla}></img>
                 </div>
                 <div class="card_content">
-                  <h2 class="card_title">Card Grid Layout</h2>
+                  <h2 class="card_title">Tesla Website Clone</h2>
+                  <p class="card_text">Clone of Tesla website</p>
+                  <button class="btn card_btn">Read More</button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src={mock}></img>
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">React Chatapp</h2>
                   <p class="card_text">
-                    Demo of pixel perfect pure CSS simple responsive card grid
-                    layout
+                    A chatapp built with React.js and firebase
                   </p>
                   <button class="btn card_btn">Read More</button>
                 </div>
@@ -74,29 +93,11 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src="https://picsum.photos/500/300/?image=17"></img>
+                  <img src={mock}></img>
                 </div>
                 <div class="card_content">
-                  <h2 class="card_title">Card Grid Layout</h2>
-                  <p class="card_text">
-                    Demo of pixel perfect pure CSS simple responsive card grid
-                    layout
-                  </p>
-                  <button class="btn card_btn">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img src="https://picsum.photos/500/300/?image=2"></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">Card Grid Layout</h2>
-                  <p class="card_text">
-                    Demo of pixel perfect pure CSS simple responsive card grid
-                    layout
-                  </p>
+                  <h2 class="card_title">Upcoming!!</h2>
+                  <p class="card_text">Stay tuned....</p>
                   <button class="btn card_btn">Read More</button>
                 </div>
               </div>

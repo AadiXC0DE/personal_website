@@ -32,7 +32,7 @@ const About = () => {
             </Fade>
             <Fade bottom delay={500}>
               <p>
-                I develop websites with HTML, CSS and JavaScript. I have top
+                I develop websites with HTML, CSS and JavaScript, React.js. I have top
                 skills in using design softwares like Figma.
               </p>
             </Fade>

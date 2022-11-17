@@ -24,15 +24,15 @@ const Home = () => {
           </Fade>
           <Fade bottom delay={300} duration={1300}>
             <h3 className="Home_heading">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Innovative, task-driven developer with experience in building web
+              applications. Proficient in creating user interfaces, writing and
+              testing codes, troubleshooting simple/ complex issues, and
+              implementing new features.
             </h3>
           </Fade>
           <Fade bottom delay={320}>
             <h3 className="Button_text">
-              Learn more about me by clicking on this cool button
+              Learn more about me by clicking down!!
             </h3>
             <Homebutton />
           </Fade>
