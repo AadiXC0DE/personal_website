@@ -1,10 +1,9 @@
 import React from "react";
 import "./Cards.css";
 import Fade from "react-reveal/Fade";
-import netflix from "../assets/netflix_img.png";
-import tesla from "../assets/tesla_clone.png";
-import mapty from "../assets/mapty_app.png";
-import crypto from "../assets/crypto_app.png";
+import netflix from "../assets/netflix.png";
+import tesla from "../assets/tesla.png";
+import crypto from "../assets/crypto.jpg";
 import mock from "../assets/mock.jpeg";
 
 const Cards = () => {
@@ -18,29 +17,21 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src={netflix}></img>
+                  <img class="exp-img" src={netflix}></img>
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">Netflix Clone</h2>
                   <p class="card_text">
                     A webapp built with React.js and TMDB API
                   </p>
-                  <button
-                    class="btn card_btn"
-                    onClick={
-                      (window.location.href =
-                        "https://dynamic-sable-52dc19.netlify.app/")
-                    }
-                  >
-                    Read More
-                  </button>
+                  <button class="btn card_btn">Read More</button>
                 </div>
               </div>
             </li>
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src={mapty}></img>
+                  <img src={mock} class="exp-img"></img>
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">Mapty APP</h2>
@@ -52,7 +43,7 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src={crypto}></img>
+                  <img src={crypto} class="exp-img"></img>
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">NFT website on blockchain</h2>
@@ -67,7 +58,7 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src={tesla}></img>
+                  <img src={tesla} class="exp-img"></img>
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">Tesla Website Clone</h2>
@@ -79,7 +70,7 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src={mock}></img>
+                  <img src={mock} class="exp-img"></img>
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">React Chatapp</h2>
@@ -93,7 +84,7 @@ const Cards = () => {
             <li class="cards_item">
               <div class="card">
                 <div class="card_image">
-                  <img src={mock}></img>
+                  <img src={mock} class="exp-img"></img>
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">Upcoming!!</h2>
