@@ -35,7 +35,8 @@ img {
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.423);
+  color: black;
 }
 
 .cards {
@@ -108,4 +109,7 @@ img {
 .exp-img {
   width: 400px;
   height: 200px;
+}
+.card_content > a {
+  text-decoration: none;
 }

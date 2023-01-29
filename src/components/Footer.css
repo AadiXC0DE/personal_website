@@ -2,6 +2,11 @@ body {
   position: relative;
   min-height: 100%;
 }
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+}
 .footer {
   width: 100%;
   background-color: rgb(37, 37, 37);
@@ -13,6 +18,7 @@ body {
   left: 0;
   height: 2.5rem;
   justify-content: space-between;
+  margin-top: auto;
 }
 .right {
   background-color: inherit;
