@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -16,13 +17,16 @@ const Footer = () => {
           <div className="right">
             <ul className="icons">
               <li>
-                <a href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/">
+                <a
+                  href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/"
+                  target="_blank"
+                >
                   <FaLinkedin />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/">
-                  <FaFacebookSquare />
+                <a href="https://github.com/AadiXC0DE" target="_blank">
+                  <AiFillGithub />
                 </a>
               </li>
               <li>

@@ -32,8 +32,9 @@ const About = () => {
             </Fade>
             <Fade bottom delay={500}>
               <p>
-                I develop websites with HTML, CSS and JavaScript, React.js. I have top
-                skills in using design softwares like Figma.
+                I develop websites with HTML, CSS, JavaScript and ReactJS. I
+                have top skills in using design softwares like Figma. I’m
+                Currently learning MongoDB, Docker and Tailwind
               </p>
             </Fade>
             <Fade bottom delay={700}>

@@ -24,7 +24,8 @@ const Cards = () => {
                 <div class="card_content">
                   <h2 class="card_title">Netflix Clone</h2>
                   <p class="card_text">
-                    A webapp built with React.js and TMDB API
+                    A webapp built with ReactJS, TMDB API and axios to fetch
+                    data from the server.
                   </p>
                   <a
                     href=" https://dynamic-sable-52dc19.netlify.app/"
@@ -42,7 +43,11 @@ const Cards = () => {
                 </div>
                 <div class="card_content">
                   <h2 class="card_title">Mapty APP</h2>
-                  <p class="card_text">webapp to track your workout on map</p>
+                  <p class="card_text">
+                    {" "}
+                    A webapp to track all your daily workouts on the map. Made
+                    with Pure HTML, CSS and JS.
+                  </p>
                   <a
                     href="https://spiffy-jelly-b513b8.netlify.app/"
                     target="_blank"
