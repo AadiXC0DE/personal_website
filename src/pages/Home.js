@@ -20,14 +20,14 @@ const Home = () => {
             <h1 className="Home_heading Heading_name">Aaditya</h1>
           </Fade>
           <Fade bottom delay={250}>
-            <h2 className="Home_heading_2">Web Designer and Developer</h2>
+            <h2 className="Home_heading_2">Software Engineer</h2>
           </Fade>
           <Fade bottom delay={300} duration={1300}>
             <h3 className="Home_heading">
-              Innovative, task-driven developer with experience in building web
-              applications. Proficient in creating user interfaces, writing and
-              testing codes, troubleshooting simple/ complex issues, and
-              implementing new features.
+              Passionate software developer and current undergraduate, actively
+              interning and crafting innovative projects. Proficient in creating
+              user interfaces, writing and testing codes, troubleshooting
+              simple/ complex issues, and implementing new features.
             </h3>
           </Fade>
           <Fade bottom delay={320}>

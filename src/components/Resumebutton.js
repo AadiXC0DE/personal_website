@@ -7,10 +7,10 @@ const Resumebutton = () => {
       <div className="main_button">
         <div class="wrapper">
           <a
-            href="https://drive.google.com/file/d/1wysOeUb6j-_fMHBxnHQsvmfuIOcuxAlZ/view?usp=share_link"
+            href="https://drive.google.com/file/d/1IKUQmD1fiyOrYWUGRknmM_on84jZChqz/view?usp=sharing"
             target="_blank"
           >
-            Resume
+            See my resume!
           </a>
         </div>
       </div>

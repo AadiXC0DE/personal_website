@@ -38,7 +38,7 @@ const Contactform = () => {
             <AiFillGithub />
           </a>
 
-          <a href="https://twitter.com/aadityachowdhu4" target="_blank">
+          <a href="https://twitter.com/AadiChowdhury7" target="_blank">
             <AiFillTwitterCircle />
           </a>
         </div>

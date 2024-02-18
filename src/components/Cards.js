@@ -1,138 +1,138 @@
 import React from "react";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
 import "./Cards.css";
-import Fade from "react-reveal/Fade";
 import netflix from "../assets/netflix.png";
 import tesla from "../assets/tesla.png";
 import crypto from "../assets/crypto.jpg";
 import mapty from "../assets/mapty.png";
 import mock from "../assets/mock.jpeg";
 import youtube from "../assets/youtube.png";
+import qr from "../assets/qr.png";
+import quiz from "../assets/quiz.png";
+import sarazaiten from "../assets/sarazaiten.png";
+
+const projectsData = [
+  {
+    title: "QR Ninja",
+    image: qr,
+    description:
+      "A cool QR code generator with NextJS and TailwindCSS. You can generate QR codes for URLs, text, and even download them as SVGs!",
+    link: "https://qr-ninja.vercel.app/",
+  },
+  {
+    title: "Elabs Quiz",
+    image: quiz,
+    description:
+      "An internal quiz app for ELabs KIIT, built with ReactJS, Tailwind CSS and MongoDB. Now in use by 2000+ college students!",
+    link: "https://elabs-quiz.vercel.app/",
+  },
+  {
+    title: "Sarazaiten",
+    image: sarazaiten,
+    description:
+      "A webapp built with ReactJS, Tailwind CSS, Framer animations and OpenAI's GPT-3.5 that makes learning DSA free and fun!",
+    link: "https://sarazaiten.netlify.app/",
+  },
+  {
+    title: "Netflix Clone",
+    image: netflix,
+    description:
+      "A webapp built with ReactJS, TMDB API and axios to fetch data from the server.",
+    link: "https://dynamic-sable-52dc19.netlify.app/",
+  },
+  {
+    title: "Mapty APP",
+    image: mapty,
+    description:
+      "A webapp to track all your daily workouts on the map. Made with Pure HTML, CSS and JS.",
+    link: "https://spiffy-jelly-b513b8.netlify.app/",
+  },
+  {
+    title: "NFT website on blockchain",
+    image: crypto,
+    description:
+      "A React.js website to showcase your NFTs, currently in development. Check out the code on GitHub!",
+    link: "https://github.com/AadiXC0DE/CryptoPunk",
+  },
+  {
+    title: "Tesla Website Clone",
+    image: tesla,
+    description:
+      "Clone of Tesla website built with React and styled components.",
+    link: "https://clever-trifle-e934fc.netlify.app/",
+  },
+  {
+    title: "React Chatapp",
+    image: mock,
+    description:
+      "A chatapp built with React.js and firebase (coming soon!!). Check out the code on GitHub!",
+  },
+  {
+    title: "Youtube Clone",
+    image: youtube,
+    description: "A working youtube clone built with React and MaterialUI",
+    link: "https://capable-paletas-d20ffc.netlify.app/",
+  },
+];
 
 const Cards = () => {
   return (
     <div class="container">
-      <Fade bottom duration={1300} delay={200}>
-        <div class="main">
-          <h1 className="experience-heading">Projects</h1>
+      <div class="main">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="experience-heading"
+        >
+          Projects
+        </motion.h1>
 
-          <ul class="cards">
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img class="exp-img" src={netflix}></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">Netflix Clone</h2>
-                  <p class="card_text">
-                    A webapp built with ReactJS, TMDB API and axios to fetch
-                    data from the server.
-                  </p>
-                  <a
-                    href=" https://dynamic-sable-52dc19.netlify.app/"
-                    target="_blank"
-                  >
-                    <button class="btn card_btn">Read More</button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img src={mapty} class="exp-img"></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">Mapty APP</h2>
-                  <p class="card_text">
-                    {" "}
-                    A webapp to track all your daily workouts on the map. Made
-                    with Pure HTML, CSS and JS.
-                  </p>
-                  <a
-                    href="https://spiffy-jelly-b513b8.netlify.app/"
-                    target="_blank"
-                  >
-                    <button class="btn card_btn">Read More</button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img src={crypto} class="exp-img"></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">NFT website on blockchain</h2>
-                  <p class="card_text">
-                    A React.js website to showcase your NFTs
-                  </p>
-                  <a
-                    href="https://github.com/AadiXC0DE/CryptoPunk"
-                    target="_blank"
-                  >
-                    <button class="btn card_btn">Read More</button>
-                  </a>
-                </div>
-              </div>
-            </li>
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="tw-text-white tw-text-center tw-text-lg tw-mt-4 tw-mb-4"
+        >
+          so many projects, here are a few that im proud of and that made an
+          impact in the community. Checkout the rest on my github!
+        </motion.p>
 
-            <li class="cards_item">
+        <ul class="cards">
+          {projectsData.map((project, index) => (
+            <motion.li
+              className="cards_item"
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
               <div class="card">
                 <div class="card_image">
-                  <img src={tesla} class="exp-img"></img>
+                  <img
+                    class="exp-img"
+                    src={project.image}
+                    alt={project.title}
+                  />
                 </div>
                 <div class="card_content">
-                  <h2 class="card_title">Tesla Website Clone</h2>
-                  <p class="card_text">
-                    Clone of Tesla website built with React and styled
-                    components
-                  </p>
-                  <a
-                    href="https://clever-trifle-e934fc.netlify.app/"
-                    target="_blank"
-                  >
-                    <button class="btn card_btn">Read More</button>
-                  </a>
+                  <h2 class="card_title">{project.title}</h2>
+                  <p class="card_text">{project.description}</p>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button class="btn card_btn">Read More</button>
+                    </a>
+                  )}
                 </div>
               </div>
-            </li>
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img src={mock} class="exp-img"></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">React Chatapp</h2>
-                  <p class="card_text">
-                    A chatapp built with React.js and firebase (coming soon!!)
-                  </p>
-                  <button class="btn card_btn">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="cards_item">
-              <div class="card">
-                <div class="card_image">
-                  <img src={youtube} class="exp-img"></img>
-                </div>
-                <div class="card_content">
-                  <h2 class="card_title">Youtube Clone</h2>
-                  <p class="card_text">
-                    A working youtube clone built with React and MaterialUI
-                  </p>
-                  <a
-                    href="https://capable-paletas-d20ffc.netlify.app/"
-                    target="_blank"
-                  >
-                    <button class="btn card_btn">Read More</button>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </Fade>
+            </motion.li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
