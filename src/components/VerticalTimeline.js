@@ -65,7 +65,7 @@ const VerticalTimeline = () => {
                       {item.date}
                     </h2>
                     <div className="tw-relative tw-flex-1 tw-mb-10 tw-bg-[#4fbdb9] tw-border-b-4 tw-border-blue-200 tw-shadow tw-rounded-3xl ">
-                      <div className="tw-relative tw-z-20 tw-p-6">
+                      <div className="tw-relative tw-p-6">
                         <p className="tw-mb-2 tw-text-lg tw-font-semibold tw-text-white">
                           {item.event}
                         </p>
