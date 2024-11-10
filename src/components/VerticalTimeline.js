@@ -143,7 +143,7 @@ export const Timeline = () => {
           Building MVPs, scaling products, and crafting experiences that matter.
         </p>
       </div>
-      <div ref={ref} className="tw-relative tw-max-w-7xl lg-tw-mx-32 tw-pb-20">
+      <div ref={ref} className="tw-relative tw-max-w-7xl lg:tw-mx-32 tw-pb-20">
         {timelineData.map((item, index) => (
           <div
             key={index}
