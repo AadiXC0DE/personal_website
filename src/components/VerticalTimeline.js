@@ -56,7 +56,7 @@ const timelineData = [
         </div>
 
         <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
-          <div className="tw-absolute tw-top-4 tw-right-4 tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+          <div className="tw-absolute tw-top-4 tw-right-4 tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9] tw-text-[clamp(0.75rem, 4vw, 1rem)] tw-max-w-full tw-whitespace-nowrap">
             Acquired by Adda247
           </div>
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
@@ -135,15 +135,15 @@ export const Timeline = () => {
       className="tw-w-full tw-bg-black dark:tw-bg-neutral-950 tw-font-sans md:tw-px-8"
       ref={containerRef}
     >
-      <div className="tw-max-w-7xl tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10">
-        <h2 className="tw-text-lg md:tw-text-4xl tw-mb-4 tw-text-[#4fbdb9] tw-max-w-4xl">
+      <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10">
+        <h2 className="tw-text-xl md:tw-text-4xl tw-mb-4 tw-text-[#4fbdb9] tw-max-w-4xl">
           Journey Through Code
         </h2>
         <p className="tw-text-neutral-400 tw-text-sm md:tw-text-base tw-max-w-sm">
           Building MVPs, scaling products, and crafting experiences that matter.
         </p>
       </div>
-      <div ref={ref} className="tw-relative tw-max-w-7xl tw-mx-32 tw-pb-20">
+      <div ref={ref} className="tw-relative tw-max-w-7xl lg-tw-mx-32 tw-pb-20">
         {timelineData.map((item, index) => (
           <div
             key={index}
