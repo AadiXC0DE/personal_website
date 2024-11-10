@@ -19,6 +19,7 @@
   display: flex;
   font-size: 20px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .Logo {
@@ -30,7 +31,6 @@
   text-decoration: none;
   color: #4fbdba;
   font-size: 40px;
-  font-family: fantasy;
 }
 
 .nav > .nav-links > a {
@@ -127,7 +127,7 @@
 }
 
 .nav-links > a::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
