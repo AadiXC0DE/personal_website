@@ -12,7 +12,7 @@ const Home = () => {
     <div className="tw-bg-black tw-text-white">
       <Navbar />
 
-      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-6 lg:tw-px-12 tw-py-16">
+      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-6 lg:tw-px-12 lg:tw-py-16">
         {/* Main Text Section */}
         <div className="Home_main_text tw-flex tw-flex-col tw-space-y-6">
           {/* Greeting with Typewriter Effect */}

@@ -11,7 +11,7 @@ const About = () => {
     <div className="tw-bg-black tw-text-white">
       <Navbar />
 
-      <div className="about_container tw-flex tw-flex-col tw-items-start tw-px-6 tw-py-12 lg:tw-py-20 lg:tw-max-w-5xl lg:tw-mx-auto">
+      <div className="about_container tw-flex tw-flex-col tw-items-start tw-px-6 lg:tw-py-16 lg:tw-max-w-5xl lg:tw-mx-auto">
         {/* Typewriter effect for heading */}
         <TypewriterEffect
           text="I'm a software engineer, bringing ideas to life through impactful MVPs."

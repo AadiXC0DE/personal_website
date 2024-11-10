@@ -1,9 +1,9 @@
-import React from "react";
-import "./Contactform.css";
-import { SiGmail } from "react-icons/si";
-import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import './Contactform.css';
+import { SiGmail } from 'react-icons/si';
+import { AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
+import { FaLinkedin } from 'react-icons/fa';
+import Fade from 'react-reveal/Fade';
 
 const Contactform = () => {
   return (
@@ -14,10 +14,11 @@ const Contactform = () => {
       <hr className="line"></hr>
       <Fade bottom duration={1300} delay={300}>
         <h2>
-          Have an exciting project you need help with? Send me an email or
-          contact me Linkedin
+          Got a project in mind? Book a call with me, and let's chat about how
+          we can work together.
           <br />
-          Currently looking for internship opportunities!!
+          <br />
+          I'm always open to exciting projects — let's make something great!
         </h2>
       </Fade>
 
