@@ -44,11 +44,11 @@ const About = () => {
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
                 <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
-                  SDE Intern at Ownpath
+                  <span className="tw-font-bold">Ownpath</span>
                 </h3>
                 <p className="tw-text-gray-300 tw-mt-2">
                   <span className="tw-font-medium tw-text-teal-500">Role:</span>{' '}
-                  Developed a health tech app for Philips Innovation, enabling
+                  Developed a health tech app for <span className="tw-font-bold">Philips Innovation</span>, enabling
                   faster health scans and boosting user engagement by{' '}
                   <span className="tw-text-white tw-font-semibold">25%</span>.
                 </p>
@@ -56,7 +56,14 @@ const About = () => {
                   <span className="tw-font-medium tw-text-teal-500">Tech:</span>{' '}
                   Created an engaging frontend with React and Tailwind;
                   engineered backend APIs using Node.js and MongoDB for
-                  real-time data processing.
+                  real-time data processing. Developed AI agents for designer
+                  website/component analysis using LLM and LangChain.
+                </p>
+                <p className="tw-text-gray-300 tw-mt-2">
+                  <span className="tw-font-medium tw-text-teal-500">Role:</span>{' '}
+                  Working on the design system for <span className="tw-font-bold">Hero MotoCorp</span>, building AI tools
+                  such as a design analyzer and writing assistant to enhance
+                  design workflows and improve efficiency.
                 </p>
               </motion.div>
             </li>
@@ -160,7 +167,7 @@ const About = () => {
               transition={{ delay: 1.6, duration: 0.6 }}
               className="tw-mt-4 tw-text-gray-300 tw-font-semibold"
             >
-              Have an idea? Let’s connect and make it happen!
+              Have an idea? Let's connect and make it happen!
             </motion.p>
           </div>
         </motion.div>

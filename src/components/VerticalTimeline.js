@@ -4,15 +4,42 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const timelineData = [
   {
+    title: '2025',
+    content: (
+      <div className="tw-space-y-6">
+        <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+          <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
+            Software Engineer @ Ownpath
+          </h4>
+          <p className="tw-text-neutral-300">
+            Working on the design system for <span className="tw-font-bold">Hero MotoCorp</span>, building AI tools 
+            such as design analyzer and writing assistant to enhance design workflows.
+          </p>
+          <div className="tw-mt-4 tw-flex tw-flex-wrap tw-gap-2">
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              LangChain
+            </span>
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              VueJS
+            </span>
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              Nuxt
+            </span>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
     title: '2024',
     content: (
       <div className="tw-space-y-6">
         <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
-            SDE Intern @ Ownpath
+            Software Engineer @ Ownpath
           </h4>
           <p className="tw-text-neutral-300">
-            Led Heartprint mobile app development for Philips Innovation. Built
+            Led Heartprint mobile app development for <span className="tw-font-bold">Philips Innovation</span>. Built
             scalable backend serving thousands of users.
           </p>
           <div className="tw-mt-4 tw-flex tw-flex-wrap tw-gap-2">
@@ -24,6 +51,9 @@ const timelineData = [
             </span>
             <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
               Node.js
+            </span>
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              MongoDB
             </span>
           </div>
         </div>
