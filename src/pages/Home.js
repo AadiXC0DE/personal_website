@@ -29,7 +29,7 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="tw-text-2xl lg:tw-text-3xl tw-text-gray-300"
           >
-            Software Engineer | Turning Ideas into Digital Solutions
+            Software Engineer | Turning Ideas into Code
           </motion.h2>
 
           {/* About and Services */}
@@ -39,9 +39,9 @@ const Home = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="tw-text-lg tw-text-gray-400 tw-max-w-lg"
           >
-            I specialize in transforming concepts into high-quality MVPs and
-            scalable digital products. If you're looking to bring your idea to
-            life, I'm here to help you create something extraordinary.
+            I transform napkin sketches into polished MVPs that scale. No fluff, 
+            just clean code and solid architecture. Need your next big thing built right? 
+            Let's make the internet a bit more awesome together.
           </motion.p>
 
           {/* Call to Action Button with Attention Animation */}
