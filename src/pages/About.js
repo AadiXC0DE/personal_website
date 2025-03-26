@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Verticalname from '../components/Verticalname';
 import { FaBriefcase, FaRocket } from 'react-icons/fa';
 import { TypewriterEffect } from '../utils/TypewriterEffect';
+import BlogSection from '../components/BlogSection';
 
 const About = () => {
   return (
@@ -171,16 +172,19 @@ const About = () => {
             </motion.p>
           </div>
         </motion.div>
-      </div>
 
+        {/* Add the Blog Section here */}
+        <BlogSection />
+        
+      </div>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8, duration: 1 }}
-        className="Vertical_text"
-      >
-        <Verticalname />
-      </motion.div>
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.8, duration: 1 }}
+          className="Vertical_text"
+        >
+          <Verticalname />
+        </motion.div>
 
       <Footer />
     </div>
