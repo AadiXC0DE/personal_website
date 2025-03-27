@@ -7,7 +7,7 @@ const timelineData = [
     title: '2025',
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             Software Engineer @ Ownpath
           </h4>
@@ -34,7 +34,7 @@ const timelineData = [
     title: '2024',
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             Software Engineer @ Ownpath
           </h4>
@@ -64,7 +64,7 @@ const timelineData = [
     title: '2023',
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             SWE Intern @ Gastrogate AB
           </h4>
@@ -85,7 +85,7 @@ const timelineData = [
           </div>
         </div>
 
-        <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <div className="tw-absolute tw-top-4 tw-right-4 tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9] tw-text-[clamp(0.75rem, 4vw, 1rem)] tw-max-w-full tw-whitespace-nowrap">
             Acquired by Adda247
           </div>
@@ -115,7 +115,7 @@ const timelineData = [
     title: '2022',
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-p-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             Frontend Lead @ ELabs KIIT
           </h4>
