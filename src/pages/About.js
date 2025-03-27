@@ -23,26 +23,28 @@ const About = () => {
     <div className="tw-bg-black tw-text-white">
       <Navbar />
 
-      <div className="about_container tw-flex tw-flex-col tw-items-start tw-px-3 sm:tw-px-6 lg:tw-py-16 lg:tw-max-w-5xl lg:tw-mx-auto">
+      <div className="about_container tw-flex tw-flex-col tw-items-start tw-px-3 sm:tw-px-6 lg:tw-max-w-5xl lg:tw-mx-auto">
         {/* Typewriter effect for heading */}
+        <div className="tw-flex tw-flex-col tw-items-start">
         <TypewriterEffect
           text="I'm a software engineer, bringing ideas to life"
-          className="tw-text-4xl sm:tw-text-5xl tw-font-bold tw-text-left"
+          className="tw-text-4xl sm:tw-text-5xl tw-font-bold"
           cursorClassName="tw-w-1 tw-h-8"
         />
 
         <TypewriterEffect
           text="Bringing your vision to life."
           className="tw-text-xl sm:tw-text-2xl tw-text-gray-400 tw-mt-3 tw-text-left"
-          cursorClassName="tw-w-1 tw-h-6"
-        />
+            cursorClassName="tw-w-1 tw-h-6"
+          />
+        </div>
 
         {/* Experience Section */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-4/5 lg:tw-w-full tw-mt-10 tw-mb-10"
+          className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
           <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
             <FaBriefcase className="tw-text-3xl tw-text-teal-500 tw-transition-transform hover:tw-scale-110" />
@@ -290,7 +292,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="freelance_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-4/5 lg:tw-w-full tw-mt-10 tw-mb-10"
+          className="freelance_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
           <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
             <FaRocket className="tw-text-3xl tw-text-teal-500 tw-transition-transform hover:tw-scale-110" />
@@ -378,7 +380,7 @@ const About = () => {
         </motion.div>
 
       <Footer />
-    </div>
+      </div>
   );
 };
 
