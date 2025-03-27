@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Verticalname from '../components/Verticalname';
@@ -76,37 +76,46 @@ const About = () => {
                   </p>
                 </div>
                 
-                {/* Show all points on desktop, or when expanded on mobile */}
-                <div className={`${!expandedSections['ownpath'] ? 'tw-hidden sm:tw-block' : ''} tw-space-y-3`}>
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Created frontend with React and Tailwind; engineered backend APIs using Node.js 
-                      and MongoDB for real-time data processing.
-                    </p>
-                  </div>
-                  
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Working on design system for <span className="tw-font-medium tw-text-white">Hero MotoCorp</span>, 
-                      building AI tools to enhance design workflows.
-                    </p>
-                  </div>
-                  
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Developed AI agents for designer website analysis using LLM and LangChain.
-                    </p>
-                  </div>
-                </div>
+                <AnimatePresence>
+                  {(expandedSections['ownpath'] || window.innerWidth >= 640) && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="tw-space-y-3 tw-overflow-hidden"
+                    >
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Created frontend with React and Tailwind; engineered backend APIs using Node.js 
+                          and MongoDB for real-time data processing.
+                        </p>
+                      </div>
+                      
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Working on design system for <span className="tw-font-medium tw-text-white">Hero MotoCorp</span>, 
+                          building AI tools to enhance design workflows.
+                        </p>
+                      </div>
+                      
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Developed AI agents for designer website analysis using LLM and LangChain.
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
               
               {/* Toggle button - only visible on mobile */}
               <p 
                 onClick={() => toggleSection('ownpath')} 
-                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-hover:underline"
+                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-cursor-pointer tw-hover:underline"
               >
                 {expandedSections['ownpath'] ? 'See less' : 'See more'}
               </p>
@@ -143,28 +152,37 @@ const About = () => {
                   </p>
                 </div>
                 
-                {/* Show all points on desktop, or when expanded on mobile */}
-                <div className={`${!expandedSections['gastrogate'] ? 'tw-hidden sm:tw-block' : ''} tw-space-y-3`}>
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Built fuzzy search functionality reducing search times by <span className="tw-text-white tw-font-semibold">50%</span>.
-                    </p>
-                  </div>
-                  
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Increased user engagement by <span className="tw-text-white tw-font-semibold">30%</span> with data-driven improvements.
-                    </p>
-                  </div>
-                </div>
+                <AnimatePresence>
+                  {(expandedSections['gastrogate'] || window.innerWidth >= 640) && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="tw-space-y-3 tw-overflow-hidden"
+                    >
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Built fuzzy search functionality reducing search times by <span className="tw-text-white tw-font-semibold">50%</span>.
+                        </p>
+                      </div>
+                      
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Increased user engagement by <span className="tw-text-white tw-font-semibold">30%</span> with data-driven improvements.
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
               
               {/* Toggle button - only visible on mobile */}
               <p 
                 onClick={() => toggleSection('gastrogate')} 
-                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-hover:underline"
+                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-cursor-pointer tw-hover:underline"
               >
                 {expandedSections['gastrogate'] ? 'See less' : 'See more'}
               </p>
@@ -198,22 +216,31 @@ const About = () => {
                   </p>
                 </div>
                 
-                {/* Show all points on desktop, or when expanded on mobile */}
-                <div className={`${!expandedSections['symmulate'] ? 'tw-hidden sm:tw-block' : ''} tw-space-y-3`}>
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Later Joined as founding engineer, led development of an edTech chatbot resulting in 
-                      <span className="tw-text-white tw-font-semibold"> acquisition by Adda247</span>.
-                    </p>
-                  </div>
-                </div>
+                <AnimatePresence>
+                  {(expandedSections['symmulate'] || window.innerWidth >= 640) && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="tw-space-y-3 tw-overflow-hidden"
+                    >
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Later Joined as founding engineer, led development of an edTech chatbot resulting in 
+                          <span className="tw-text-white tw-font-semibold"> acquisition by Adda247</span>.
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
               
               {/* Toggle button - only visible on mobile */}
               <p 
                 onClick={() => toggleSection('symmulate')} 
-                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-hover:underline"
+                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-cursor-pointer tw-hover:underline"
               >
                 {expandedSections['symmulate'] ? 'See less' : 'See more'}
               </p>
@@ -249,29 +276,38 @@ const About = () => {
                   </p>
                 </div>
                 
-                {/* Show all points on desktop, or when expanded on mobile */}
-                <div className={`${!expandedSections['elabs'] ? 'tw-hidden sm:tw-block' : ''} tw-space-y-3`}>
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Developed responsive SPAs with MUI, Tailwind CSS, and Next.js.
-                    </p>
-                  </div>
-                  
-                  <div className="tw-flex tw-items-start">
-                    <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
-                    <p className="tw-text-gray-300">
-                      Optimized platform with Express.js and AWS, boosting user base by <span className="tw-text-white tw-font-semibold">70%</span> 
-                      to 2000+ and reducing load times by <span className="tw-text-white tw-font-semibold">20%</span>.
-                    </p>
-                  </div>
-                </div>
+                <AnimatePresence>
+                  {(expandedSections['elabs'] || window.innerWidth >= 640) && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="tw-space-y-3 tw-overflow-hidden"
+                    >
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Developed responsive SPAs with MUI, Tailwind CSS, and Next.js.
+                        </p>
+                      </div>
+                      
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                        <p className="tw-text-gray-300">
+                          Optimized platform with Express.js and AWS, boosting user base by <span className="tw-text-white tw-font-semibold">70%</span> 
+                          to 2000+ and reducing load times by <span className="tw-text-white tw-font-semibold">20%</span>.
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
               
               {/* Toggle button - only visible on mobile */}
               <p 
                 onClick={() => toggleSection('elabs')} 
-                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-hover:underline"
+                className="tw-text-teal-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-cursor-pointer tw-hover:underline"
               >
                 {expandedSections['elabs'] ? 'See less' : 'See more'}
               </p>
