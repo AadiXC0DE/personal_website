@@ -41,7 +41,7 @@ const BlogSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1.4, duration: 1 }}
-      className="blog_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-4/5 lg:tw-w-full tw-mt-10 tw-mb-10"
+      className="blog_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
     >
       <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
         <FaPenNib className="tw-text-3xl tw-text-teal-500 tw-transition-transform hover:tw-scale-110" />
