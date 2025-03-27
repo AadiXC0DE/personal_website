@@ -17,7 +17,9 @@ const Experience = () => {
         className="tw-text-4xl tw-font-bold tw-text-center tw-pl-4 sm:tw-text-center tw-text-white tw-pb-4 "
         cursorClassName="tw-w-1 tw-h-8"
       />
-      <VerticalTimeline />
+      <div className="vertical_timeline_container">
+        <VerticalTimeline />
+      </div>
       <Cards />
       <Fade bottom delay={450} duration={1400}>
         <div className="Vertical_text">
