@@ -162,7 +162,7 @@ export const Timeline = () => {
 
   return (
     <div
-      className="tw-w-full tw-bg-black dark:tw-bg-neutral-950 tw-font-sans md:tw-px-8"
+      className="vertical_timeline tw-w-full tw-bg-black dark:tw-bg-neutral-950 tw-font-sans md:tw-px-6"
       ref={containerRef}
     >
       <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10 tw-flex tw-flex-col tw-items-center">
@@ -173,7 +173,7 @@ export const Timeline = () => {
           Building MVPs, scaling products, and crafting experiences that matter.
         </p>
       </div>
-      <div ref={ref} className="tw-relative tw-max-w-7xl lg:tw-mx-32 tw-pb-20">
+      <div ref={ref} className="tw-relative tw-max-w-7xl tw-pb-20">
         {timelineData.map((item, index) => (
           <div
             key={index}
