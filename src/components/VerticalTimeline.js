@@ -165,11 +165,11 @@ export const Timeline = () => {
       className="tw-w-full tw-bg-black dark:tw-bg-neutral-950 tw-font-sans md:tw-px-8"
       ref={containerRef}
     >
-      <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10">
-        <h2 className="tw-text-xl md:tw-text-4xl tw-mb-4 tw-text-[#4fbdb9] tw-max-w-4xl">
+      <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10 tw-flex tw-flex-col tw-items-center">
+        <h2 className="tw-text-xl md:tw-text-3xl tw-mb-4 tw-text-center tw-text-[#4fbdb9] tw-max-w-4xl">
           Journey Through Code
         </h2>
-        <p className="tw-text-neutral-400 tw-text-sm md:tw-text-base tw-max-w-sm">
+        <p className="tw-text-neutral-400 tw-text-sm md:tw-text-base tw-max-w-sm tw-text-center">
           Building MVPs, scaling products, and crafting experiences that matter.
         </p>
       </div>
