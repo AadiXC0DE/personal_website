@@ -6,13 +6,14 @@ import Verticalname from '../components/Verticalname';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import { TypewriterEffect } from '../utils/TypewriterEffect';
+import Brands from '../components/Brands';
 
 const Home = () => {
   return (
     <div className="tw-bg-black tw-text-white">
       <Navbar />
 
-      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-6 lg:tw-px-12 lg:tw-py-16">
+      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-3 lg:tw-px-12 lg:tw-py-auto">
         {/* Main Text Section */}
         <div className="Home_main_text tw-flex tw-flex-col tw-space-y-6">
           {/* Greeting with Typewriter Effect */}
@@ -29,7 +30,7 @@ const Home = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="tw-text-2xl lg:tw-text-3xl tw-text-gray-300"
           >
-            Software Engineer | Turning Ideas into Code
+            Software Engineer • I build fast, clean, real-world apps.
           </motion.h2>
 
           {/* About and Services */}
@@ -39,10 +40,10 @@ const Home = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="tw-text-lg tw-text-gray-400 tw-max-w-lg"
           >
-            I transform napkin sketches into polished MVPs that scale. No fluff, 
-            just clean code and solid architecture. Need your next big thing built right? 
+            From napkin sketches to polished MVPs. Need your next big thing built? 
             Let's make the internet a bit more awesome together.
           </motion.p>
+          <Brands />
 
           {/* Call to Action Button with Attention Animation */}
           <motion.div
@@ -119,6 +120,7 @@ const Home = () => {
           />
         </motion.div>
       </div>
+
 
       {/* Vertical Name and Footer */}
       <motion.div
