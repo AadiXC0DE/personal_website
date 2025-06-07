@@ -4,18 +4,18 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <div>
-      <div class="nav">
+    <nav>
+      <div className="nav">
         <input type="checkbox" id="nav-check"></input>
-        <div class="nav-btn">
-          <label for="nav-check">
+        <div className="nav-btn">
+          <label htmlFor="nav-check">
             <span></span>
             <span></span>
             <span></span>
           </label>
         </div>
 
-        <div class="nav-links">
+        <div className="nav-links">
           <div className="Logo">
             <Link to="/">A</Link>
           </div>
@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link to="/contact">Contact </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

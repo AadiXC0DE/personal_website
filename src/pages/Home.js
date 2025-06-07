@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import '../App.css';
 import main from '../assets/main_image.png';
@@ -9,8 +10,36 @@ import { TypewriterEffect } from '../utils/TypewriterEffect';
 import Brands from '../components/Brands';
 
 const Home = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aaditya Chowdhury",
+    "url": "https://aadityachowdhury.dev",
+    "sameAs": [
+      "https://github.com/AadiXC0DE",
+      "https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/",
+      "https://x.com/AadiChowdhury7"
+    ],
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ownpath"
+    }
+  };
+
   return (
     <div className="tw-bg-black tw-text-white">
+      <Helmet>
+        <title>Aaditya Chowdhury | Software Engineer</title>
+        <meta
+          name="description"
+          content="Welcome to the portfolio of Aaditya Chowdhury, a software engineer who builds fast, clean, and real-world web applications."
+        />
+        <link rel="canonical" href="https://aadityachowdhury.dev" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <Navbar />
 
       <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-3 lg:tw-px-12 lg:tw-py-auto">
@@ -115,7 +144,7 @@ const Home = () => {
         >
           <img
             src={main}
-            alt="Aaditya"
+            alt="Aaditya Chowdhury, Software Engineer"
             className="tw-w-2/3 sm:tw-w-1/2 lg:tw-w-full tw-max-w-lg tw-object-contain"
           />
         </motion.div>

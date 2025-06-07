@@ -20,22 +20,30 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaLinkedin />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AadiXC0DE" target="_blank">
+                <a href="https://github.com/AadiXC0DE" target="_blank" rel="noopener noreferrer">
                   <AiFillGithub />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/simply_being_aadi/">
+                <a
+                  href="https://www.instagram.com/simply_being_aadi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="mailto:aadityaz2077@gmail.com">
+                <a
+                  href="mailto:aadityaz2077@gmail.com"
+                  rel="noopener noreferrer"
+                >
                   <GrMail />
                 </a>
               </li>

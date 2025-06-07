@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -21,6 +22,14 @@ const About = () => {
 
   return (
     <div className="tw-bg-black tw-text-white">
+      <Helmet>
+        <title>About | Aaditya Chowdhury</title>
+        <meta
+          name="description"
+          content="Learn more about Aaditya Chowdhury, a passionate software engineer with experience in building web applications and AI-powered solutions."
+        />
+        <link rel="canonical" href="https://aadityachowdhury.dev/about" />
+      </Helmet>
       <Navbar />
 
       <div className="about_container tw-flex tw-flex-col tw-items-start tw-px-3 sm:tw-px-6 lg:tw-max-w-5xl lg:tw-mx-auto">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import '../App.css';
 import Cards from '../components/Cards';
@@ -11,6 +12,14 @@ import { TypewriterEffect } from '../utils/TypewriterEffect';
 const Experience = () => {
   return (
     <div>
+      <Helmet>
+        <title>Experience | Aaditya Chowdhury</title>
+        <meta
+          name="description"
+          content="Explore the work experience of Aaditya Chowdhury, including his roles and accomplishments in the software engineering field."
+        />
+        <link rel="canonical" href="https://aadityachowdhury.dev/experience" />
+      </Helmet>
       <Navbar />
       <TypewriterEffect
         text="Experience"
