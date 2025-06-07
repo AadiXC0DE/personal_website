@@ -10,8 +10,24 @@ import youtube from '../assets/youtube.png';
 import qr from '../assets/qr.png';
 import quiz from '../assets/quiz.png';
 import sarazaiten from '../assets/sarazaiten.png';
+import caldy from '../assets/caldy.png';
+import craftmine from '../assets/craftmine.png';
 
 const projectsData = [
+  {
+    title: 'Caldy',
+    image: caldy,
+    description:
+      'Caldy is a platform with Stunning calendar and powerful task management features to help you organize your life beautifully.',
+    link: 'https://caldy.vercel.app/',
+  },
+  {
+    title: 'CraftMine',
+    image: craftmine,
+    description:
+      'CraftMine is simple minecraft clone built with JS and Three.js for the web',
+    link: 'https://craft-mine.vercel.app/',
+  },
   {
     title: 'QR Ninja',
     image: qr,
