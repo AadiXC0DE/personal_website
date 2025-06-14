@@ -90,13 +90,11 @@ const Home = () => {
               <motion.button
                 className="tw-no-underline tw-bg-gray-300 tw-group tw-cursor-pointer tw-relative tw-shadow-2xl tw-rounded-full tw-px-4 tw-py-2 tw-text-sm tw-font-semibold tw-leading-6 tw-text-white tw-inline-block"
                 whileHover={{
-                  scale: 1.05,
                   backgroundColor: '#4fbdba',
                   boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.2)',
                   transition: { duration: 0.3, ease: 'easeInOut' },
                 }}
                 whileTap={{
-                  scale: 0.95,
                   transition: { duration: 0.2, ease: 'easeInOut' },
                 }}
                 initial={{ opacity: 0 }}
@@ -156,7 +154,7 @@ const Home = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="Vertical_text tw-flex tw-justify-center tw-py-8"
+        className="Vertical_text"
       >
         <Verticalname />
       </motion.div>
