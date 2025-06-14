@@ -1,18 +1,14 @@
-body {
-  position: relative;
-  min-height: 100%;
-}
+
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 5vh;
 }
 .footer {
   width: 100%;
   background-color: rgb(37, 37, 37);
   z-index: 100;
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
