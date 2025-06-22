@@ -12,6 +12,7 @@ import quiz from '../assets/quiz.png';
 import sarazaiten from '../assets/sarazaiten.png';
 import caldy from '../assets/caldy.png';
 import craftmine from '../assets/craftmine.png';
+import serenity from '../assets/serenity.png';
 
 const projectsData = [
   {
@@ -27,6 +28,13 @@ const projectsData = [
     description:
       'CraftMine is simple minecraft clone built with JS and Three.js for the web',
     link: 'https://craft-mine.vercel.app/',
+  },
+  {
+    title: 'Serenity',
+    image: serenity,
+    description:
+      'Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon.',
+    link: 'https://serenitycare.online/',
   },
   {
     title: 'QR Ninja',
