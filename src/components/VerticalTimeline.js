@@ -1,10 +1,10 @@
-'use client';
-import { useScroll, useTransform, motion } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+"use client";
+import { useScroll, useTransform, motion } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 
 const timelineData = [
   {
-    title: '2025',
+    title: "2025",
     content: (
       <div className="tw-space-y-6">
         <div className="tw-relative tw-pr-6 bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
@@ -12,8 +12,10 @@ const timelineData = [
             Software Engineer @ Ownpath
           </h4>
           <p className="tw-text-neutral-300">
-            Working on the design system for <span className="tw-font-bold">Hero MotoCorp</span>, building AI tools 
-            such as design analyzer and writing assistant to enhance design workflows.
+            Working on the design system for{" "}
+            <span className="tw-font-bold">Hero MotoCorp</span>, building AI
+            tools such as design analyzer and writing assistant to enhance
+            design workflows.
           </p>
           <div className="tw-mt-4 tw-flex tw-flex-wrap tw-gap-2">
             <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
@@ -31,15 +33,16 @@ const timelineData = [
     ),
   },
   {
-    title: '2024',
+    title: "2024",
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             Software Engineer @ Ownpath
           </h4>
           <p className="tw-text-neutral-300">
-            Led Heartprint mobile app development for <span className="tw-font-bold">Philips Innovation</span>. Built
+            Led Heartprint mobile app development for{" "}
+            <span className="tw-font-bold">Philips Innovation</span>. Built
             scalable backend serving thousands of users.
           </p>
           <div className="tw-mt-4 tw-flex tw-flex-wrap tw-gap-2">
@@ -61,10 +64,10 @@ const timelineData = [
     ),
   },
   {
-    title: '2023',
+    title: "2023",
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             SWE Intern @ Gastrogate AB
           </h4>
@@ -85,7 +88,7 @@ const timelineData = [
           </div>
         </div>
 
-        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <div className="tw-absolute tw-top-4 tw-right-4 tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9] tw-text-[clamp(0.75rem, 4vw, 1rem)] tw-max-w-full tw-whitespace-nowrap">
             Acquired by Adda247
           </div>
@@ -112,10 +115,10 @@ const timelineData = [
     ),
   },
   {
-    title: '2022',
+    title: "2022",
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-pr-6 tw-bg-black/20 tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             Frontend Lead @ ELabs KIIT
           </h4>
@@ -154,7 +157,7 @@ export const Timeline = () => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ['start 10%', 'end 50%'],
+    offset: ["start 10%", "end 50%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -162,7 +165,7 @@ export const Timeline = () => {
 
   return (
     <div
-      className="vertical_timeline tw-w-full tw-bg-black dark:tw-bg-neutral-950 tw-font-sans md:tw-px-6"
+      className="vertical_timeline tw-w-full tw-bg-inherit dark:tw-bg-gray-900 tw-shadow-lg tw-rounded-lg tw-font-sans md:tw-px-6"
       ref={containerRef}
     >
       <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10 tw-flex tw-flex-col tw-items-center">
@@ -180,7 +183,7 @@ export const Timeline = () => {
             className="tw-flex tw-justify-start tw-pt-10 md:tw-pt-20 md:tw-gap-10"
           >
             <div className="tw-sticky tw-flex tw-flex-col md:tw-flex-row tw-z-40 tw-items-center tw-top-40 tw-self-start tw-max-w-xs lg:tw-max-w-sm md:tw-w-full">
-              <div className="tw-h-10 tw-absolute tw-left-3 md:tw-left-3 tw-w-10 tw-rounded-full tw-bg-black dark:tw-bg-black tw-flex tw-items-center tw-justify-center">
+              <div className="tw-h-10 tw-absolute tw-left-3 md:tw-left-3 tw-w-10 tw-rounded-full tw-bg-inherit dark:tw-bg-inherit tw-flex tw-items-center tw-justify-center">
                 <div className="tw-h-4 tw-w-4 tw-rounded-full tw-bg-[#4fbdb9]/20 tw-border tw-border-[#4fbdb9] tw-p-2" />
               </div>
               <h3 className="tw-hidden md:tw-block tw-text-xl md:tw-pl-20 md:tw-text-5xl tw-font-bold tw-text-[#4fbdb9]">
@@ -197,7 +200,7 @@ export const Timeline = () => {
         ))}
         <div
           style={{
-            height: height + 'px',
+            height: height + "px",
           }}
           className="tw-absolute md:tw-left-8 tw-left-8 tw-top-0 tw-overflow-hidden tw-w-[2px] tw-bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] tw-from-transparent tw-from-[0%] tw-via-neutral-800 tw-to-transparent tw-to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >

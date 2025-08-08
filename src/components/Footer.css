@@ -1,11 +1,10 @@
-
 .footer-wrapper {
   display: flex;
   flex-direction: column;
 }
 .footer {
   width: 100%;
-  background-color: rgb(37, 37, 37);
+  background-color: black;
   z-index: 100;
   display: flex;
   position: fixed;

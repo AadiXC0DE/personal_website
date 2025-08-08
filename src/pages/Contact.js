@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contactform from "../components/Contactform";
@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="tw-text-white">
       <Helmet>
         <title>Contact | Aaditya Chowdhury</title>
         <meta

@@ -1,17 +1,17 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import Navbar from '../components/Navbar';
-import '../App.css';
-import Cards from '../components/Cards';
-import Footer from '../components/Footer';
-import Verticalname from '../components/Verticalname';
-import Fade from 'react-reveal/Fade';
-import VerticalTimeline from '../components/VerticalTimeline';
-import { TypewriterEffect } from '../utils/TypewriterEffect';
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
+import "../App.css";
+import Cards from "../components/Cards";
+import Footer from "../components/Footer";
+import Verticalname from "../components/Verticalname";
+import Fade from "react-reveal/Fade";
+import VerticalTimeline from "../components/VerticalTimeline";
+import { TypewriterEffect } from "../utils/TypewriterEffect";
 
 const Experience = () => {
   return (
-    <div>
+    <div className="tw-text-white">
       <Helmet>
         <title>Experience | Aaditya Chowdhury</title>
         <meta

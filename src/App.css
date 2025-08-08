@@ -2,7 +2,20 @@ html {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
-  background-color: #000000;
+  background-color: #001220;
+  background-image: url("./assets/Haikei Blob Scene.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body {
+  min-height: 100%;
+  background-color: #001220;
+  background-image: url("./assets/Haikei Blob Scene.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 :root {
@@ -158,7 +171,7 @@ html {
 }
 
 @media (max-width: 900px) {
-  .vertical_timeline{
+  .vertical_timeline {
     padding-left: 1%;
     padding-right: 1%;
     margin-left: 24px;
@@ -167,20 +180,20 @@ html {
 }
 
 @media (min-width: 901px) {
-  .vertical_timeline{
+  .vertical_timeline {
     margin-left: 18%;
     margin-right: 18%;
   }
 }
 
-.vertical_timeline{
+.vertical_timeline {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.vertical_timeline_container{
+.vertical_timeline_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +217,8 @@ html {
   background-color: #4fbdba;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   overflow-x: hidden;
 }
