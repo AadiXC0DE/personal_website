@@ -57,7 +57,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="tw-text-2xl lg:tw-text-3xl tw-text-gray-300"
+              className="tw-text-xl lg:tw-text-2xl tw-text-gray-300"
             >
               Software Engineer • I build fast, clean, real-world apps.
             </motion.h2>
@@ -85,7 +85,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="tw-mt-8"
+              className="tw-mt-4"
             >
               <motion.a
                 href="https://calendly.com/aadityaz2077/one-on-one"
@@ -97,7 +97,7 @@ const Home = () => {
                   boxShadow: "0 0 24px rgba(79,189,186,0.55)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="tw-group tw-relative tw-inline-flex tw-items-center tw-gap-2 tw-rounded-full tw-bg-[#4fbdba] tw-text-black tw-font-semibold tw-px-6 tw-py-3 tw-transition-all tw-duration-300 tw-ease-out hover:tw-bg-teal-400 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-teal-300 tw-no-underline"
+                className="tw-group tw-relative tw-inline-flex tw-items-center tw-gap-2 tw-rounded-full tw-bg-[#4fbdba] tw-text-black tw-font-semibold tw-px-6 tw-py-3 tw-transition-all tw-duration-300 tw-ease-out hover:tw-bg-teal-400 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-teal-300 tw-no-underline tw-shadow-[0_0_24px_rgba(79,189,186,0.25)]"
               >
                 {/* Glow background */}
                 <span
@@ -126,6 +126,9 @@ const Home = () => {
                   </svg>
                 </span>
               </motion.a>
+              <p className="tw-text-xs tw-text-gray-400 tw-mt-2 tw-ml-2">
+                Let’s talk about your next MVP
+              </p>
             </motion.div>
           </div>
         </div>

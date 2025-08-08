@@ -21,6 +21,15 @@ const projectsData = [
     description:
       "Caldy is a platform with Stunning calendar and powerful task management features to help you organize your life beautifully.",
     link: "https://caldy.vercel.app/",
+    badges: ["Featured", "In Production"],
+  },
+  {
+    title: "Serenity",
+    image: serenity,
+    description:
+      "Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon.",
+    link: "https://serenitycare.online/",
+    badges: ["AI-powered"],
   },
   {
     title: "CraftMine",
@@ -30,18 +39,12 @@ const projectsData = [
     link: "https://craft-mine.vercel.app/",
   },
   {
-    title: "Serenity",
-    image: serenity,
-    description:
-      "Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon.",
-    link: "https://serenitycare.online/",
-  },
-  {
     title: "QR Ninja",
     image: qr,
     description:
       "A cool QR code generator with NextJS and TailwindCSS. You can generate QR codes for URLs, text, and even download them as SVGs!",
     link: "https://qr-ninja.vercel.app/",
+    badges: ["Featured"],
   },
   {
     title: "Elabs Quiz",
@@ -57,12 +60,26 @@ const projectsData = [
       "A webapp built with ReactJS, Tailwind CSS, Framer animations and OpenAI's GPT-3.5 that makes learning DSA free and fun!",
     link: "https://sarazaiten.netlify.app/",
   },
+  // Clones & older projects grouped below
+  {
+    title: "Youtube Clone",
+    image: youtube,
+    description: "A working youtube clone built with React and MaterialUI",
+    link: "https://capable-paletas-d20ffc.netlify.app/",
+  },
   {
     title: "Netflix Clone",
     image: netflix,
     description:
       "A webapp built with ReactJS, TMDB API and axios to fetch data from the server.",
     link: "https://dynamic-sable-52dc19.netlify.app/",
+  },
+  {
+    title: "Tesla Website Clone",
+    image: tesla,
+    description:
+      "Clone of Tesla website built with React and styled components.",
+    link: "https://clever-trifle-e934fc.netlify.app/",
   },
   {
     title: "Mapty APP",
@@ -79,23 +96,10 @@ const projectsData = [
     link: "https://github.com/AadiXC0DE/CryptoPunk",
   },
   {
-    title: "Tesla Website Clone",
-    image: tesla,
-    description:
-      "Clone of Tesla website built with React and styled components.",
-    link: "https://clever-trifle-e934fc.netlify.app/",
-  },
-  {
     title: "React Chatapp",
     image: mock,
     description:
       "A chatapp built with React.js and firebase (coming soon!!). Check out the code on GitHub!",
-  },
-  {
-    title: "Youtube Clone",
-    image: youtube,
-    description: "A working youtube clone built with React and MaterialUI",
-    link: "https://capable-paletas-d20ffc.netlify.app/",
   },
 ];
 
@@ -109,7 +113,7 @@ const Cards = () => {
           transition={{ duration: 0.5 }}
           className="experience-heading tw-mt-8"
         >
-          Projects
+          Personal Projects
         </motion.h1>
 
         <motion.p
@@ -150,7 +154,11 @@ const Cards = () => {
                       rel="noopener noreferrer"
                       className="tw-no-underline"
                     >
-                      <button className="btn card_btn">Read More</button>
+                      <button className="btn card_btn">
+                        {project.link.includes("github.com")
+                          ? "View Code"
+                          : "View Project"}
+                      </button>
                     </a>
                   )}
                 </div>

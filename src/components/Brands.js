@@ -44,7 +44,7 @@ const Brands = () => {
             transition={{ duration: 0.5 }}
             className="tw-text-[11px] tw-tracking-wider tw-uppercase tw-text-gray-500 tw-mb-2"
           >
-            Trusted by
+            Worked with
           </motion.h2>
         </div>
 
@@ -62,7 +62,7 @@ const Brands = () => {
                 variants={brandVariants}
                 initial="rest"
                 whileHover="hover"
-                className="tw-relative"
+                className="tw-relative tw-pr-2 tw-border-r tw-border-white/10 last:tw-border-none last:tw-pr-0 last:tw-mr-0"
                 transition={{ duration: 0.2 }}
               >
                 <div className="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-bg-transparent">

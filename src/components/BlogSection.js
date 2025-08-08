@@ -12,6 +12,7 @@ const blogData = [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
     link: "https://dev.to/aadixc0de/from-intern-to-frontend-developer-to-selling-a-company-in-college-16if",
     external: true,
+    readTime: "6 min read",
     tags: ["webdev", "chatgpt", "career", "react"],
   },
   {
@@ -24,6 +25,7 @@ const blogData = [
       "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     link: "https://dev.to/aadixc0de/understanding-the-event-loop-in-javascript-made-simple-512b",
     external: true,
+    readTime: "5 min read",
     tags: ["webdev", "javascript", "programming", "tutorial"],
   },
   {
@@ -58,8 +60,7 @@ const BlogSection = () => {
         transition={{ delay: 1.5, duration: 0.6 }}
         className="tw-mt-2 tw-mb-8 tw-text-gray-300"
       >
-        Thoughts, experiences, and technical insights from my journey in
-        software engineering
+        Check out my thoughts on JS, LLMs, and shipping fast software.
       </motion.p>
 
       <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6 tw-mt-4 tw-w-full">
@@ -72,25 +73,46 @@ const BlogSection = () => {
             className="tw-group tw-h-full"
           >
             <a
-              href={blog.link}
-              target={blog.external ? "_blank" : "_self"}
-              rel={blog.external ? "noopener noreferrer" : ""}
-              className="tw-block tw-h-full tw-no-underline"
+              href={blog.date === "TBA" ? "#" : blog.link}
+              target={blog.external && blog.date !== "TBA" ? "_blank" : "_self"}
+              rel={
+                blog.external && blog.date !== "TBA"
+                  ? "noopener noreferrer"
+                  : ""
+              }
+              className={`tw-block tw-h-full tw-no-underline ${
+                blog.date === "TBA" ? "tw-pointer-events-none" : ""
+              }`}
             >
               <div className="tw-bg-black/20 tw-overflow-hidden tw-rounded-xl tw-border tw-border-white/10 tw-h-full tw-flex tw-flex-col tw-transition-all tw-duration-300 hover:tw-translate-y-[-4px] hover:tw-shadow-md hover:tw-shadow-black/40 hover:tw-border-white/20">
                 {/* Image at the top with smaller height */}
-                <div className="tw-h-40 tw-overflow-hidden tw-rounded-t-xl">
+                <div className="tw-h-40 tw-overflow-hidden tw-rounded-t-xl tw-relative">
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 tw-group-hover:tw-scale-105"
+                    className={`tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 tw-group-hover:tw-scale-105 ${
+                      blog.date === "TBA" ? "tw-opacity-60" : ""
+                    }`}
                   />
+                  {blog.date === "TBA" && (
+                    <div className="tw-absolute tw-inset-0 tw-bg-black/40 tw-flex tw-items-center tw-justify-center">
+                      <span className="tw-text-white tw-text-sm tw-font-semibold tw-tracking-wide">
+                        Coming soon
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="tw-flex tw-p-5 tw-flex-col tw-flex-grow">
                   {/* Date */}
                   <span className="tw-text-sm tw-text-[#4fbdb9] tw-mb-2">
                     {blog.date}
+                    {blog.readTime && blog.date !== "TBA" && (
+                      <span className="tw-text-gray-400">
+                        {" "}
+                        · {blog.readTime}
+                      </span>
+                    )}
                   </span>
 
                   {/* Heading */}
@@ -115,26 +137,32 @@ const BlogSection = () => {
                     ))}
                   </div>
 
-                  {/* Read more link at the bottom */}
-                  <div className="tw-flex tw-items-center tw-text-sm tw-text-[#4fbdb9] tw-font-medium">
-                    {blog.external
-                      ? "Read on " +
-                        new URL(blog.link).hostname.replace("www.", "")
-                      : "Read more"}
-                    <svg
-                      className="tw-ml-1 tw-w-4 tw-h-4 tw-transition-transform tw-group-hover:tw-translate-x-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </div>
+                  {/* CTA button at the bottom */}
+                  {blog.date !== "TBA" && (
+                    <div>
+                      <span className="tw-inline-flex tw-items-center tw-gap-2 tw-text-sm tw-font-medium tw-text-[#4fbdb9] tw-bg-[#4fbdb9]/10 tw-border tw-border-[#4fbdb9]/20 tw-rounded-md tw-px-3 tw-py-1.5">
+                        {blog.external
+                          ? `Read on ${new URL(blog.link).hostname.replace(
+                              "www.",
+                              "",
+                            )}`
+                          : "Read more"}
+                        <svg
+                          className="tw-w-4 tw-h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             </a>

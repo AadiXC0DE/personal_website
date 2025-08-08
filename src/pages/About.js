@@ -67,14 +67,14 @@ const About = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="tw-border-l-2 tw-border-teal-500 tw-pl-0 tw-py-2"
             >
-              <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
+              <h3 className="tw-text-2xl tw-font-bold tw-text-white">
                 <span className="tw-font-bold">Ownpath</span>
               </h3>
               <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
                 <p className="tw-text-gray-400 tw-text-sm">
                   Software Engineer • 2024 - Present
                 </p>
-                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-teal-400 tw-w-fit tw-mt-1 sm:tw-mt-0">
+                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-gray-300 tw-border tw-border-gray-700 tw-w-fit tw-mt-1 sm:tw-mt-0">
                   Hybrid
                 </span>
               </div>
@@ -169,14 +169,14 @@ const About = () => {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
-              <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
+              <h3 className="tw-text-2xl tw-font-bold tw-text-white">
                 Gastrogate AB
               </h3>
               <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
                 <p className="tw-text-gray-400 tw-text-sm">
                   SWE Intern • 2023 - 2024
                 </p>
-                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-teal-400 tw-w-fit tw-mt-1 sm:tw-mt-0">
+                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-gray-300 tw-border tw-border-gray-700 tw-w-fit tw-mt-1 sm:tw-mt-0">
                   Sweden (Remote)
                 </span>
               </div>
@@ -236,13 +236,13 @@ const About = () => {
               </p>
 
               <div className="tw-flex tw-flex-wrap tw-gap-2 tw-mt-3 tw-pl-[18px]">
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-indigo-500/10 tw-text-indigo-400">
                   React
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-indigo-500/10 tw-text-indigo-400">
                   GraphQL
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-indigo-500/10 tw-text-indigo-400">
                   Expo
                 </span>
               </div>
@@ -255,14 +255,14 @@ const About = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
-              <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
+              <h3 className="tw-text-2xl tw-font-bold tw-text-white">
                 Symmulate Labs
               </h3>
               <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
                 <p className="tw-text-gray-400 tw-text-sm">
                   Web Dev & NLP Intern • 2023 - 2023
                 </p>
-                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-teal-400 tw-w-fit tw-mt-1 sm:tw-mt-0">
+                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-gray-300 tw-border tw-border-gray-700 tw-w-fit tw-mt-1 sm:tw-mt-0">
                   IIT Mandi
                 </span>
               </div>
@@ -311,13 +311,13 @@ const About = () => {
               </p>
 
               <div className="tw-flex tw-flex-wrap tw-gap-2 tw-mt-3 tw-pl-[18px]">
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-amber-500/10 tw-text-amber-400">
                   LLMs
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-amber-500/10 tw-text-amber-400">
                   Chatbots
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-amber-500/10 tw-text-amber-400">
                   NLP
                 </span>
               </div>
@@ -330,14 +330,14 @@ const About = () => {
               transition={{ delay: 0.9, duration: 0.6 }}
               className="tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
-              <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
+              <h3 className="tw-text-2xl tw-font-bold tw-text-white">
                 <span className="tw-font-bold">Elabs Platform</span>
               </h3>
               <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
                 <p className="tw-text-gray-400 tw-text-sm">
                   Frontend Engineer • 2022
                 </p>
-                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-teal-400 tw-w-fit tw-mt-1 sm:tw-mt-0">
+                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-gray-300 tw-border tw-border-gray-700 tw-w-fit tw-mt-1 sm:tw-mt-0">
                   Remote
                 </span>
               </div>
@@ -398,19 +398,19 @@ const About = () => {
               </p>
 
               <div className="tw-flex tw-flex-wrap tw-gap-2 tw-mt-3 tw-pl-[18px]">
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-violet-500/10 tw-text-violet-400">
                   Next.js
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-violet-500/10 tw-text-violet-400">
                   Framer Motion
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-violet-500/10 tw-text-violet-400">
                   AWS
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-violet-500/10 tw-text-violet-400">
                   Express.js
                 </span>
-                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-violet-500/10 tw-text-violet-400">
                   MUI
                 </span>
               </div>

@@ -186,12 +186,24 @@ export const Timeline = () => {
               <div className="tw-h-10 tw-absolute tw-left-3 md:tw-left-3 tw-w-10 tw-rounded-full tw-bg-inherit dark:tw-bg-inherit tw-flex tw-items-center tw-justify-center">
                 <div className="tw-h-3 tw-w-3 tw-rounded-full tw-bg-[#4fbdb9] tw-opacity-70" />
               </div>
-              <h3 className="tw-hidden md:tw-block tw-text-xl md:tw-pl-20 md:tw-text-5xl tw-font-bold tw-text-[#4fbdb9]">
+              <h3
+                className={`tw-hidden md:tw-block tw-text-xl md:tw-pl-20 ${
+                  index === 0
+                    ? "md:tw-text-6xl tw-font-extrabold"
+                    : "md:tw-text-5xl tw-font-bold"
+                } tw-text-[#4fbdb9]`}
+              >
                 {item.title}
               </h3>
             </div>
             <div className="tw-relative tw-pl-20 tw-pr-4 md:tw-pl-4 tw-w-full">
-              <h3 className="md:tw-hidden tw-block tw-text-2xl tw-mb-4 tw-text-left tw-font-bold tw-text-[#4fbdb9]">
+              <h3
+                className={`md:tw-hidden tw-block tw-mb-4 tw-text-left tw-text-[#4fbdb9] ${
+                  index === 0
+                    ? "tw-text-3xl tw-font-extrabold"
+                    : "tw-text-2xl tw-font-bold"
+                }`}
+              >
                 {item.title}
               </h3>
               {item.content}
