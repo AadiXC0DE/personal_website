@@ -4,7 +4,10 @@
 }
 .footer {
   width: 100%;
-  background-color: black;
+  /* Themed translucent background with subtle blur */
+  background-color: rgba(0, 18, 32, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 100;
   display: flex;
   position: fixed;
@@ -14,6 +17,7 @@
   height: 2.5rem;
   justify-content: space-between;
   margin-top: auto;
+  border-top: 1px solid rgba(79, 189, 186, 0.18);
 }
 .right {
   background-color: inherit;

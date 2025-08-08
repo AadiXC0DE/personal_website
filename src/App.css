@@ -1,7 +1,10 @@
 html {
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
+  /* Show vertical scrollbar only when needed to avoid flicker on load */
+  overflow-y: auto;
+  /* Reserve space for the scrollbar to avoid layout shift when it appears */
+  scrollbar-gutter: stable both-edges;
   background-color: #001220;
   background-image: url("./assets/Haikei Blob Scene.svg");
   background-repeat: no-repeat;
@@ -34,7 +37,7 @@ body {
 
 .Home_heading {
   color: var(--primary-text-color);
-  text-align: left;
+  text-align: center;
   margin-right: 7%;
   font-size: 1.2rem;
 }
@@ -50,13 +53,13 @@ body {
 
 .Home_heading_2 {
   color: #4fbdba;
-  text-align: left;
+  text-align: center;
   opacity: 1;
 }
 
 .Button_text {
   color: var(--primary-text-color);
-  text-align: left;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -72,9 +75,6 @@ body {
   }
   .image {
     width: 0px;
-  }
-  html {
-    overflow: scroll;
   }
 }
 
@@ -93,20 +93,19 @@ body {
 
 .Vertical_text {
   z-index: 5;
-  position: absolute;
-  top: 0;
-  margin-top: 15%;
-  margin-left: 10px;
+  position: fixed;
+  top: 15vh;
+  left: 10px;
 }
 
 /*About page*/
 
 .about_container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 18%;
+  justify-content: center;
+  align-items: stretch;
   margin-left: 18%;
+  margin-right: 18%;
 }
 
 .about_heading {

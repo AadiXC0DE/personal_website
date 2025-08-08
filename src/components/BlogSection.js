@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPenNib } from "react-icons/fa";
 
 const blogData = [
   {
@@ -47,10 +46,9 @@ const BlogSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1.4, duration: 1 }}
-      className="blog_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
+      className="blog_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
     >
       <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
-        <FaPenNib className="tw-text-3xl tw-text-teal-500 tw-transition-transform hover:tw-scale-110" />
         <h2 className="tw-text-3xl tw-font-semibold">My Writings</h2>
       </div>
 
@@ -79,13 +77,13 @@ const BlogSection = () => {
               rel={blog.external ? "noopener noreferrer" : ""}
               className="tw-block tw-h-full tw-no-underline"
             >
-              <div className="tw-bg-inherit tw-overflow-hidden tw-rounded-xl tw-border tw-border-neutral-800 tw-h-full tw-flex tw-flex-col tw-transition-all tw-duration-300 hover:tw-shadow-[0_0_15px_rgba(79,189,185,0.3)] hover:tw-border-[#4fbdb9]/50 tw-group-hover:tw-transform tw-group-hover:tw-scale-[1.02]">
+              <div className="tw-bg-black/20 tw-overflow-hidden tw-rounded-xl tw-border tw-border-white/10 tw-h-full tw-flex tw-flex-col tw-transition-all tw-duration-300 hover:tw-translate-y-[-4px] hover:tw-shadow-md hover:tw-shadow-black/40 hover:tw-border-white/20">
                 {/* Image at the top with smaller height */}
                 <div className="tw-h-40 tw-overflow-hidden tw-rounded-t-xl">
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 tw-group-hover:tw-scale-110"
+                    className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 tw-group-hover:tw-scale-105"
                   />
                 </div>
 

@@ -21,11 +21,6 @@ const Experience = () => {
         <link rel="canonical" href="https://aadityachowdhury.dev/experience" />
       </Helmet>
       <Navbar />
-      <TypewriterEffect
-        text="Experience"
-        className="tw-text-4xl tw-font-bold tw-text-center tw-pl-4 sm:tw-text-center tw-text-white tw-pb-4 "
-        cursorClassName="tw-w-1 tw-h-8"
-      />
       <div className="vertical_timeline_container">
         <VerticalTimeline />
       </div>

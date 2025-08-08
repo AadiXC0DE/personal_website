@@ -98,19 +98,26 @@
   .nav > .nav-links {
     position: absolute;
     display: block;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    width: 92%;
+    left: 4%;
+    right: 4%;
+    background: rgba(0, 18, 32, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(79, 189, 186, 0.2);
+    border-radius: 12px;
     height: 0px;
-    transition: all 0.3s ease-in;
+    transition: height 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
-    left: 0px;
+    top: 56px;
     z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
     text-align: center;
+    padding: 14px 12px;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -121,13 +128,23 @@
   }
 }
 
+/* Disable underline animation on small screens; use subtle color change */
+@media (max-width: 600px) {
+  .nav-links > a::after {
+    display: none;
+  }
+  .nav-links > a:hover {
+    color: #dff6ff;
+  }
+}
+
 .nav-links > a {
   display: inline-block;
   position: relative;
 }
 
 .nav-links > a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);

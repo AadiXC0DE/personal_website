@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Verticalname from "../components/Verticalname";
-import { FaBriefcase, FaRocket } from "react-icons/fa";
+// Removed heavy icons to reduce AI-generated feel
 import { TypewriterEffect } from "../utils/TypewriterEffect";
 import BlogSection from "../components/BlogSection";
 
@@ -32,9 +32,9 @@ const About = () => {
       </Helmet>
       <Navbar />
 
-      <div className="about_container tw-flex tw-flex-col tw-items-start tw-px-3 sm:tw-px-6 lg:tw-max-w-5xl lg:tw-mx-auto">
+      <div className="about_container tw-flex tw-flex-col tw-items-center tw-px-3 sm:tw-px-6 tw-max-w-5xl tw-mx-auto">
         {/* Typewriter effect for heading */}
-        <div className="tw-flex tw-flex-col tw-items-start">
+        <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
           <TypewriterEffect
             text="I'm a software engineer, bringing ideas to life"
             className="tw-text-4xl sm:tw-text-5xl tw-font-bold"
@@ -43,7 +43,7 @@ const About = () => {
 
           <TypewriterEffect
             text="Bringing your vision to life."
-            className="tw-text-xl sm:tw-text-2xl tw-text-gray-400 tw-mt-3 tw-text-left"
+            className="tw-text-xl sm:tw-text-2xl tw-text-gray-400 tw-mt-3"
             cursorClassName="tw-w-1 tw-h-6"
           />
         </div>
@@ -53,10 +53,9 @@ const About = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
+          className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
           <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
-            <FaBriefcase className="tw-text-3xl tw-text-teal-500 tw-transition-transform hover:tw-scale-110" />
             <h2 className="tw-text-3xl tw-font-semibold">Experience</h2>
           </div>
 
@@ -82,7 +81,7 @@ const About = () => {
 
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                   <p className="tw-text-gray-300">
                     Developed a health tech app for{" "}
                     <span className="tw-font-medium tw-text-white">
@@ -105,9 +104,7 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Created frontend with React and Tailwind; engineered
                           backend APIs using Node.js and MongoDB for real-time
@@ -116,9 +113,7 @@ const About = () => {
                       </div>
 
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Working on design system for{" "}
                           <span className="tw-font-medium tw-text-white">
@@ -129,9 +124,7 @@ const About = () => {
                       </div>
 
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Developed AI agents for designer website analysis
                           using LLM and LangChain.
@@ -174,7 +167,7 @@ const About = () => {
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="tw-border-l-2 tw-border-teal-500 tw-pl-0 tw-py-2"
+              className="tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
               <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
                 Gastrogate AB
@@ -190,7 +183,7 @@ const About = () => {
 
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                   <p className="tw-text-gray-300">
                     Developed essential components for a React-based admin
                     platform with GraphQL integration.
@@ -208,9 +201,7 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Built fuzzy search functionality reducing search times
                           by{" "}
@@ -222,9 +213,7 @@ const About = () => {
                       </div>
 
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Increased user engagement by{" "}
                           <span className="tw-text-white tw-font-semibold">
@@ -264,7 +253,7 @@ const About = () => {
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="tw-border-l-2 tw-border-teal-500 tw-pl-0 tw-py-2"
+              className="tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
               <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
                 Symmulate Labs
@@ -279,7 +268,7 @@ const About = () => {
               </div>
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                   <p className="tw-text-gray-300">
                     Created 10+ chatbot UIs and optimized LLMs for faster
                     responses.
@@ -297,9 +286,7 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Later Joined as founding engineer, led development of
                           an edTech chatbot resulting in
@@ -341,7 +328,7 @@ const About = () => {
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.6 }}
-              className="tw-border-l-2 tw-border-teal-500 tw-pl-0 tw-py-2"
+              className="tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
               <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
                 <span className="tw-font-bold">Elabs Platform</span>
@@ -357,7 +344,7 @@ const About = () => {
 
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">•</div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                   <p className="tw-text-gray-300">
                     Created engaging UX through image optimization and code
                     refinement using React, JavaScript, Styled Components, and
@@ -375,9 +362,7 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Developed responsive SPAs with MUI, Tailwind CSS, and
                           Next.js.
@@ -385,9 +370,7 @@ const About = () => {
                       </div>
 
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-text-teal-500 tw-mt-1 tw-mr-3">
-                          •
-                        </div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
                           Optimized platform with Express.js and AWS, boosting
                           user base by{" "}
@@ -440,10 +423,9 @@ const About = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="freelance_section tw-flex tw-flex-col tw-items-start tw-bg-gray-900 tw-rounded-xl tw-shadow-lg tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
+          className="freelance_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
           <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
-            <FaRocket className="tw-text-3xl tw-text-teal-500 tw-transition-transform hover:tw-scale-110" />
             <h2 className="tw-text-3xl tw-font-semibold">
               Freelance & MVP Work
             </h2>
@@ -454,7 +436,7 @@ const About = () => {
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.3, duration: 0.6 }}
-              className="tw-mb-5 tw-border-l-2 tw-border-teal-500 tw-pl-0 tw-py-2"
+              className="tw-mb-5 tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
             >
               <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
                 MVP Development
@@ -472,23 +454,10 @@ const About = () => {
                 initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 1.4, duration: 0.6 }}
-                className="tw-bg-inherit tw-p-5 tw-rounded-lg tw-border tw-border-teal-500/20 tw-hover:border-teal-500/50 tw-transition-all tw-duration-300"
+                className="tw-bg-black/20 tw-p-5 tw-rounded-lg tw-border tw-border-white/10 tw-hover:border-white/20 tw-transition-all tw-duration-300 hover:tw-translate-y-[-2px] hover:tw-shadow-md hover:tw-shadow-black/40"
               >
-                <div className="tw-text-teal-400 tw-mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="tw-h-6 tw-w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
+                <div className="tw-text-[#4fbdb9] tw-mb-2 tw-text-sm tw-font-medium">
+                  What I do
                 </div>
                 <h4 className="tw-text-lg tw-font-medium tw-text-white tw-mb-2">
                   Rapid Prototyping
@@ -503,23 +472,10 @@ const About = () => {
                 initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.6 }}
-                className="tw-bg-inherit tw-p-5 tw-rounded-lg tw-border tw-border-teal-500/20 tw-hover:border-teal-500/50 tw-transition-all tw-duration-300"
+                className="tw-bg-black/20 tw-p-5 tw-rounded-lg tw-border tw-border-white/10 tw-hover:border-white/20 tw-transition-all tw-duration-300 hover:tw-translate-y-[-2px] hover:tw-shadow-md hover:tw-shadow-black/40"
               >
-                <div className="tw-text-teal-400 tw-mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="tw-h-6 tw-w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
+                <div className="tw-text-[#4fbdb9] tw-mb-2 tw-text-sm tw-font-medium">
+                  How it ships
                 </div>
                 <h4 className="tw-text-lg tw-font-medium tw-text-white tw-mb-2">
                   Idea to Product

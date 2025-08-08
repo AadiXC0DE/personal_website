@@ -1,101 +1,101 @@
-import React from 'react';
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
-import './Cards.css';
-import netflix from '../assets/netflix.png';
-import tesla from '../assets/tesla.png';
-import crypto from '../assets/crypto.jpg';
-import mapty from '../assets/mapty.png';
-import mock from '../assets/mock.jpeg';
-import youtube from '../assets/youtube.png';
-import qr from '../assets/qr.png';
-import quiz from '../assets/quiz.png';
-import sarazaiten from '../assets/sarazaiten.png';
-import caldy from '../assets/caldy.png';
-import craftmine from '../assets/craftmine.png';
-import serenity from '../assets/serenity.png';
+import React from "react";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
+import "./Cards.css";
+import netflix from "../assets/netflix.png";
+import tesla from "../assets/tesla.png";
+import crypto from "../assets/crypto.jpg";
+import mapty from "../assets/mapty.png";
+import mock from "../assets/mock.jpeg";
+import youtube from "../assets/youtube.png";
+import qr from "../assets/qr.png";
+import quiz from "../assets/quiz.png";
+import sarazaiten from "../assets/sarazaiten.png";
+import caldy from "../assets/caldy.png";
+import craftmine from "../assets/craftmine.png";
+import serenity from "../assets/serenity.png";
 
 const projectsData = [
   {
-    title: 'Caldy',
+    title: "Caldy",
     image: caldy,
     description:
-      'Caldy is a platform with Stunning calendar and powerful task management features to help you organize your life beautifully.',
-    link: 'https://caldy.vercel.app/',
+      "Caldy is a platform with Stunning calendar and powerful task management features to help you organize your life beautifully.",
+    link: "https://caldy.vercel.app/",
   },
   {
-    title: 'CraftMine',
+    title: "CraftMine",
     image: craftmine,
     description:
-      'CraftMine is simple minecraft clone built with JS and Three.js for the web',
-    link: 'https://craft-mine.vercel.app/',
+      "CraftMine is simple minecraft clone built with JS and Three.js for the web",
+    link: "https://craft-mine.vercel.app/",
   },
   {
-    title: 'Serenity',
+    title: "Serenity",
     image: serenity,
     description:
-      'Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon.',
-    link: 'https://serenitycare.online/',
+      "Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon.",
+    link: "https://serenitycare.online/",
   },
   {
-    title: 'QR Ninja',
+    title: "QR Ninja",
     image: qr,
     description:
-      'A cool QR code generator with NextJS and TailwindCSS. You can generate QR codes for URLs, text, and even download them as SVGs!',
-    link: 'https://qr-ninja.vercel.app/',
+      "A cool QR code generator with NextJS and TailwindCSS. You can generate QR codes for URLs, text, and even download them as SVGs!",
+    link: "https://qr-ninja.vercel.app/",
   },
   {
-    title: 'Elabs Quiz',
+    title: "Elabs Quiz",
     image: quiz,
     description:
-      'An internal quiz app for ELabs KIIT, built with ReactJS, Tailwind CSS and MongoDB. Now in use by 2000+ college students!',
-    link: 'https://elabs-quiz.vercel.app/',
+      "An internal quiz app for ELabs KIIT, built with ReactJS, Tailwind CSS and MongoDB. Now in use by 2000+ college students!",
+    link: "https://elabs-quiz.vercel.app/",
   },
   {
-    title: 'Sarazaiten',
+    title: "Sarazaiten",
     image: sarazaiten,
     description:
       "A webapp built with ReactJS, Tailwind CSS, Framer animations and OpenAI's GPT-3.5 that makes learning DSA free and fun!",
-    link: 'https://sarazaiten.netlify.app/',
+    link: "https://sarazaiten.netlify.app/",
   },
   {
-    title: 'Netflix Clone',
+    title: "Netflix Clone",
     image: netflix,
     description:
-      'A webapp built with ReactJS, TMDB API and axios to fetch data from the server.',
-    link: 'https://dynamic-sable-52dc19.netlify.app/',
+      "A webapp built with ReactJS, TMDB API and axios to fetch data from the server.",
+    link: "https://dynamic-sable-52dc19.netlify.app/",
   },
   {
-    title: 'Mapty APP',
+    title: "Mapty APP",
     image: mapty,
     description:
-      'A webapp to track all your daily workouts on the map. Made with Pure HTML, CSS and JS.',
-    link: 'https://spiffy-jelly-b513b8.netlify.app/',
+      "A webapp to track all your daily workouts on the map. Made with Pure HTML, CSS and JS.",
+    link: "https://spiffy-jelly-b513b8.netlify.app/",
   },
   {
-    title: 'NFT website on blockchain',
+    title: "NFT website on blockchain",
     image: crypto,
     description:
-      'A React.js website to showcase your NFTs, currently in development. Check out the code on GitHub!',
-    link: 'https://github.com/AadiXC0DE/CryptoPunk',
+      "A React.js website to showcase your NFTs, currently in development. Check out the code on GitHub!",
+    link: "https://github.com/AadiXC0DE/CryptoPunk",
   },
   {
-    title: 'Tesla Website Clone',
+    title: "Tesla Website Clone",
     image: tesla,
     description:
-      'Clone of Tesla website built with React and styled components.',
-    link: 'https://clever-trifle-e934fc.netlify.app/',
+      "Clone of Tesla website built with React and styled components.",
+    link: "https://clever-trifle-e934fc.netlify.app/",
   },
   {
-    title: 'React Chatapp',
+    title: "React Chatapp",
     image: mock,
     description:
-      'A chatapp built with React.js and firebase (coming soon!!). Check out the code on GitHub!',
+      "A chatapp built with React.js and firebase (coming soon!!). Check out the code on GitHub!",
   },
   {
-    title: 'Youtube Clone',
+    title: "Youtube Clone",
     image: youtube,
-    description: 'A working youtube clone built with React and MaterialUI',
-    link: 'https://capable-paletas-d20ffc.netlify.app/',
+    description: "A working youtube clone built with React and MaterialUI",
+    link: "https://capable-paletas-d20ffc.netlify.app/",
   },
 ];
 
@@ -132,18 +132,14 @@ const Cards = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="card">
-                <motion.div
-                  className="card_image"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
+                <div className="card_image">
                   <img
                     className="exp-img"
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                   />
-                </motion.div>
+                </div>
                 <div className="card_content">
                   <h2 className="card_title">{project.title}</h2>
                   <p className="card_text">{project.description}</p>

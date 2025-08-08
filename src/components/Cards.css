@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 
 /* Design */
 
@@ -16,10 +16,10 @@
   letter-spacing: 1px;
 }
 
-img {
+/* Scope image styling to cards to avoid leaking globals */
+.card_image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   vertical-align: middle;
   border-radius: 8px;
 }
@@ -62,7 +62,7 @@ img {
 }
 
 .cards_item:hover {
-  transform: scale(1.05);
+  transform: none;
 }
 
 @media (min-width: 40rem) {
@@ -73,14 +73,16 @@ img {
 
 @media (min-width: 56rem) {
   .cards_item {
-    width: 33.3333%;
+    /* Keep two cards per row on larger screens */
+    width: 50%;
   }
 }
 
 .card {
-  background-color: #212121;
+  background: rgba(0, 18, 32, 0.65);
   border-radius: 12px;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(79, 189, 186, 0.18);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -90,19 +92,28 @@ img {
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 24px 48px -20px rgba(79, 189, 186, 0.35);
+  border-color: rgba(79, 189, 186, 0.35);
 }
 
 .card_image {
   position: relative;
-  height: 200px; /* Adjust based on image dimensions */
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Preserve 16:9 for web screenshots */
   overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(79, 189, 186, 0.08),
+    rgba(79, 189, 186, 0.02)
+  );
 }
 
 .card_content {
   padding: 20px;
-  background: #4fbdb9;
+  background: rgba(0, 18, 32, 0.7);
+  border-top: 1px solid rgba(79, 189, 186, 0.18);
   border-radius: 0 0 12px 12px;
-  color: #fff;
+  color: var(--primary-text-color, #fff);
   flex-grow: 1; /* Ensure content fills available space */
   display: flex;
   flex-direction: column;
@@ -114,23 +125,27 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: var(--primary-text-color, #dff6ff);
 }
 
 .card_text {
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: rgba(223, 246, 255, 0.85);
 }
 
 .exp-img {
-  object-fit: cover;
+  /* Fill the available area with graceful cropping */
+  object-fit: cover !important;
   height: 100%;
   width: 100%;
   border-radius: 8px;
+  background-color: #0b2236; /* Subtle canvas behind letterboxed images */
 }
 
 .card_btn {
-  background-color: #64ffda;
+  background-color: #4fbdba;
   border: none;
   color: #212121;
   padding: 10px 20px;
@@ -142,6 +157,6 @@ img {
 }
 
 .card_btn:hover {
-  background-color: #fff;
-  color: black;
+  background-color: #64ffda;
+  color: #001220;
 }

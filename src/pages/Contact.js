@@ -18,14 +18,18 @@ const Contact = () => {
         <link rel="canonical" href="https://aadityachowdhury.dev/contact" />
       </Helmet>
       <Navbar />
-      <Fade clear delay={200} duration={1200}>
-        <Contactform />
-      </Fade>
-      <Fade bottom delay={350} duration={1400}>
-        <div className="Vertical_text">
-          <Verticalname />
-        </div>
-      </Fade>
+      <div className="tw-overflow-hidden">
+        <Fade clear delay={200} duration={1200}>
+          <Contactform />
+        </Fade>
+      </div>
+      <div className="tw-overflow-hidden">
+        <Fade bottom delay={350} duration={1400}>
+          <div className="Vertical_text">
+            <Verticalname />
+          </div>
+        </Fade>
+      </div>
       <Footer />
     </div>
   );

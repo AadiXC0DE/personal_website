@@ -36,7 +36,7 @@ const timelineData = [
     title: "2024",
     content: (
       <div className="tw-space-y-6">
-        <div className="tw-relative tw-pr-6 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+        <div className="tw-relative tw-pr-6 tw-pt-10 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
             Software Engineer @ Ownpath
           </h4>
@@ -88,8 +88,8 @@ const timelineData = [
           </div>
         </div>
 
-        <div className="tw-relative tw-pr-6 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
-          <div className="tw-absolute tw-top-4 tw-right-4 tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9] tw-text-[clamp(0.75rem, 4vw, 1rem)] tw-max-w-full tw-whitespace-nowrap">
+        <div className="tw-relative tw-pr-6 tw-pt-10 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+          <div className="tw-absolute tw-top-3 tw-right-3 tw-z-10 tw-px-2 tw-py-1 tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9] tw-text-[clamp(0.75rem,3vw,0.9rem)] tw-max-w-[80%] tw-truncate tw-pointer-events-none">
             Acquired by Adda247
           </div>
           <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
@@ -165,14 +165,14 @@ export const Timeline = () => {
 
   return (
     <div
-      className="vertical_timeline tw-w-full tw-bg-inherit dark:tw-bg-gray-900 tw-shadow-lg tw-rounded-lg tw-font-sans md:tw-px-6"
+      className="vertical_timeline tw-w-full tw-bg-transparent tw-rounded-lg tw-font-sans md:tw-px-6"
       ref={containerRef}
     >
       <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10 tw-flex tw-flex-col tw-items-center">
-        <h2 className="tw-text-xl md:tw-text-3xl tw-mb-4 tw-text-center tw-text-[#4fbdb9] tw-max-w-4xl">
+        <h2 className="tw-text-3xl tw-font-semibold tw-mb-2 tw-text-center tw-text-white tw-max-w-4xl">
           Journey Through Code
         </h2>
-        <p className="tw-text-neutral-400 tw-text-sm md:tw-text-base tw-max-w-sm tw-text-center">
+        <p className="tw-text-gray-400 tw-text-base md:tw-text-lg tw-max-w-sm tw-text-center">
           Building MVPs, scaling products, and crafting experiences that matter.
         </p>
       </div>
@@ -184,7 +184,7 @@ export const Timeline = () => {
           >
             <div className="tw-sticky tw-flex tw-flex-col md:tw-flex-row tw-z-40 tw-items-center tw-top-40 tw-self-start tw-max-w-xs lg:tw-max-w-sm md:tw-w-full">
               <div className="tw-h-10 tw-absolute tw-left-3 md:tw-left-3 tw-w-10 tw-rounded-full tw-bg-inherit dark:tw-bg-inherit tw-flex tw-items-center tw-justify-center">
-                <div className="tw-h-4 tw-w-4 tw-rounded-full tw-bg-[#4fbdb9]/20 tw-border tw-border-[#4fbdb9] tw-p-2" />
+                <div className="tw-h-3 tw-w-3 tw-rounded-full tw-bg-[#4fbdb9] tw-opacity-70" />
               </div>
               <h3 className="tw-hidden md:tw-block tw-text-xl md:tw-pl-20 md:tw-text-5xl tw-font-bold tw-text-[#4fbdb9]">
                 {item.title}
@@ -202,14 +202,14 @@ export const Timeline = () => {
           style={{
             height: height + "px",
           }}
-          className="tw-absolute md:tw-left-8 tw-left-8 tw-top-0 tw-overflow-hidden tw-w-[2px] tw-bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] tw-from-transparent tw-from-[0%] tw-via-neutral-800 tw-to-transparent tw-to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="tw-absolute md:tw-left-8 tw-left-8 tw-top-0 tw-overflow-hidden tw-w-[1px] tw-bg-neutral-800/70"
         >
           <motion.div
             style={{
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="tw-absolute tw-inset-x-0 tw-top-0 tw-w-[2px] tw-bg-gradient-to-t tw-from-[#4fbdb9] tw-via-[#4fbdb9] tw-to-transparent tw-from-[0%] tw-via-[10%] tw-rounded-full"
+            className="tw-absolute tw-inset-x-0 tw-top-0 tw-w-[1px] tw-bg-[#4fbdb9] tw-rounded-full"
           />
         </div>
       </div>
