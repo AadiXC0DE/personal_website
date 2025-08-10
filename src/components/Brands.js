@@ -42,7 +42,7 @@ const Brands = () => {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="tw-text-[11px] tw-tracking-wider tw-uppercase tw-text-gray-500 tw-mb-3"
+            className="tw-text-[11px] tw-tracking-wider tw-uppercase tw-text-gray-500 md:tw-mb-3 tw-mb-2"
           >
             Worked with
           </motion.h2>
@@ -54,7 +54,7 @@ const Brands = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.5 }}
             onClick={onBrandClick}
-            className="tw-flex tw-flex-wrap tw-items-center tw-gap-x-8 tw-gap-y-6 tw-w-full tw-cursor-pointer"
+            className="tw-flex tw-flex-wrap tw-items-center tw-gap-x-4 tw-gap-y-4 md:tw-gap-x-8 md:tw-gap-y-6 tw-w-full tw-cursor-pointer"
           >
             {brands.map((brand, index) => (
               <motion.div
@@ -67,26 +67,26 @@ const Brands = () => {
               >
                 <div className="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-bg-transparent">
                   {brand.isText ? (
-                    <span className="tw-text-white tw-font-bold tw-text-md">
+                    <span className="tw-text-white tw-font-bold tw-text-sm md:tw-text-[16px]">
                       {brand.name}
                     </span>
                   ) : brand.logo ? (
-                    <div className="tw-flex tw-items-center tw-gap-2">
+                    <div className="tw-flex tw-items-center tw-gap-1 md:tw-gap-2">
                       <img
                         src={brand.logo}
                         alt={brand.name}
                         className={`${
                           brand.name === "Philips"
-                            ? "tw-h-7 md:tw-h-6"
-                            : "tw-h-8 md:tw-h-7"
-                        } tw-w-auto tw-object-contain tw-opacity-100 tw-transition`}
+                            ? "tw-h-5 tw-w-auto md:tw-h-6"
+                            : "tw-h-6 tw-w-auto md:tw-h-8"
+                        } tw-object-contain tw-opacity-100 tw-transition`}
                         style={{
                           filter:
                             "saturate(0) brightness(0) invert(1) contrast(2)",
                         }}
                       />
                       {brand.showColon && (
-                        <span className="tw-text-white tw-opacity-70 tw-text-xl tw-font-bold md:tw-text-2xl">
+                        <span className="tw-text-white tw-opacity-70 tw-text-lg tw-font-bold md:tw-text-2xl">
                           :
                         </span>
                       )}

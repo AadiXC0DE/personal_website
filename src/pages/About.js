@@ -56,7 +56,7 @@ const About = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
-          <div className="section_header tw-flex tw-items-center tw-justify-between tw-w-full tw-mb-6">
+          <div className="section_header tw-flex tw-flex-col sm:tw-flex-row tw-items-start sm:tw-items-center tw-justify-between tw-w-full tw-mb-6 tw-gap-3 sm:tw-gap-0">
             <div className="tw-flex tw-items-center tw-space-x-3">
               <h2 className="tw-text-3xl tw-font-semibold">Highlights</h2>
             </div>

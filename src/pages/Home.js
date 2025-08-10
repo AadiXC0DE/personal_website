@@ -101,7 +101,7 @@ const Home = () => {
               useful on the web, I can build it.
             </motion.p>
           </div>
-          <div className="tw-overflow-visible">
+          <div className="tw-overflow-visible tw-mb-6 md:tw-mb-8">
             <Brands />
           </div>
 
