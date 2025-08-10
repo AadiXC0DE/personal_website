@@ -67,7 +67,7 @@ const Brands = () => {
               >
                 <div className="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-bg-transparent">
                   {brand.isText ? (
-                    <span className="tw-text-white tw-font-bold tw-text-sm md:tw-text-[16px]">
+                    <span className="tw-text-white tw-font-bold tw-text-[14.5px] md:tw-text-[16px]">
                       {brand.name}
                     </span>
                   ) : brand.logo ? (
@@ -78,7 +78,7 @@ const Brands = () => {
                         className={`${
                           brand.name === "Philips"
                             ? "tw-h-5 tw-w-auto md:tw-h-6"
-                            : "tw-h-6 tw-w-auto md:tw-h-8"
+                            : "tw-h-6 tw-w-auto md:tw-h-7"
                         } tw-object-contain tw-opacity-100 tw-transition`}
                         style={{
                           filter:

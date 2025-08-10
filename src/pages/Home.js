@@ -41,13 +41,13 @@ const Home = () => {
       </Helmet>
       <Navbar />
 
-      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-3 lg:tw-px-12 lg:tw-pt-6 lg:tw-pb-4">
+      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-3 lg:tw-px-12 lg:tw-pt-6 lg:tw-pb-4 tw-overflow-y-hidden">
         {/* Main Text Section */}
         <div className="Home_main_text tw-flex tw-flex-col tw-space-y-4 tw-pb-4">
           {/* Greeting with Typewriter Effect */}
           <TypewriterEffect
             text="Hi, I'm Aaditya Chowdhury"
-            className="tw-text-4xl lg:tw-text-6xl tw-font-bold tw-leading-tight tw-text-[#4fbdba]"
+            className="tw-text-4xl lg:tw-text-6xl tw-font-bold tw-leading-tight tw-text-[#4fbdba] tw-mb-0 lg:tw-mb-0"
             cursorClassName="tw-w-1 tw-h-8 tw-bg-emerald-400"
           />
 
@@ -71,7 +71,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="tw-text-2xl lg:tw-text-3xl tw-text-gray-200 tw-leading-relaxed tw-max-w-2xl"
+              className="tw-text-2xl lg:tw-text-3xl tw-text-gray-200 tw-leading-relaxed tw-max-w-2xl tw-mb-0 lg:tw-mb-0"
             >
               <span className="tw-font-semibold tw-text-[#4fbdba] tw-text-2xl lg:tw-text-3xl">
                 I build
@@ -95,23 +95,23 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="tw-text-lg tw-text-gray-400 tw-max-w-lg"
+              className="tw-text-lg tw-text-gray-400 tw-max-w-lg tw-mb-0 lg:tw-mb-0"
             >
               From napkin sketch to shipped product. If you need something
               useful on the web, I can build it.
             </motion.p>
           </div>
-          <div className="tw-overflow-visible tw-mb-6 md:tw-mb-8">
+          <div className="tw-overflow-hidden md:tw-mb-8 tw-mb-0 lg:tw-mb-0">
             <Brands />
           </div>
 
           {/* CTA Button */}
-          <div className="tw-overflow-visible">
+          <div className="tw-overflow-hidden md:tw-overflow-visible">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="tw-mt-2"
+              className="tw-mt-2 tw-mb-0 lg:tw-mb-0"
             >
               <motion.a
                 href="https://calendly.com/aadityaz2077/one-on-one"
@@ -152,8 +152,8 @@ const Home = () => {
                   </svg>
                 </span>
               </motion.a>
-              <p className="tw-text-xs tw-text-gray-300 tw-mt-3 tw-ml-2">
-                Let’s talk about your next MVP
+              <p className="tw-text-xs tw-text-gray-300 tw-mt-3 tw-ml-2 tw-mb-0 lg:tw-mb-0">
+                Let's talk about your next MVP
               </p>
             </motion.div>
           </div>
