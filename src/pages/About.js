@@ -115,11 +115,27 @@ const About = () => {
                       <div className="tw-flex tw-items-start">
                         <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
                         <p className="tw-text-gray-300">
-                          Working on design system for{" "}
+                          Built AI tools such as design analyzer and writing
+                          assistant to enhance design workflows for{" "}
                           <span className="tw-font-medium tw-text-white">
                             Hero MotoCorp
                           </span>
-                          , building AI tools to enhance design workflows.
+                          . Contributed to the{" "}
+                          <span className="tw-font-medium tw-text-white">
+                            Hero Echo Webapp
+                          </span>
+                        </p>
+                      </div>
+
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                        <p className="tw-text-gray-300">
+                          Working on complete frontend from scratch as the lead
+                          dev for a JS based AI Audio Editor app for a popular{" "}
+                          <span className="tw-font-medium tw-text-white">
+                            San Francisco based startup
+                          </span>
+                          .
                         </p>
                       </div>
 
@@ -158,6 +174,18 @@ const About = () => {
                 </span>
                 <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
                   Tailwind
+                </span>
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                  Express
+                </span>
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                  WavesurferJS
+                </span>
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                  VueJS
+                </span>
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-teal-500/10 tw-text-teal-400">
+                  Nuxt
                 </span>
               </div>
             </motion.div>

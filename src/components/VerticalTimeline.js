@@ -12,10 +12,10 @@ const timelineData = [
             Software Engineer @ Ownpath
           </h4>
           <p className="tw-text-neutral-300">
-            Working on the design system for{" "}
-            <span className="tw-font-bold">Hero MotoCorp</span>, building AI
-            tools such as design analyzer and writing assistant to enhance
-            design workflows.
+            Built AI tools such as design analyzer and writing assistant to
+            enhance design workflows for{" "}
+            <span className="tw-font-bold">Hero MotoCorp</span>. Contributed to
+            the Hero Echo Webapp
           </p>
           <div className="tw-mt-4 tw-flex tw-flex-wrap tw-gap-2">
             <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
@@ -26,6 +26,28 @@ const timelineData = [
             </span>
             <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
               Nuxt
+            </span>
+          </div>
+        </div>
+
+        <div className="tw-relative tw-pr-6 tw-pt-10 tw-bg-inherit tw-backdrop-blur-sm tw-rounded-xl tw-border tw-border-neutral-800">
+          <h4 className="tw-text-lg tw-font-semibold tw-text-[#4fbdb9] tw-mb-2">
+            Software Engineer @ Ownpath
+          </h4>
+          <p className="tw-text-neutral-300">
+            Working on complete frontend from scratch as the lead dev for a JS
+            based AI Audio Editor app for a popular{" "}
+            <span className="tw-font-bold">San Francisco based startup</span>.
+          </p>
+          <div className="tw-mt-4 tw-flex tw-flex-wrap tw-gap-2">
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              React
+            </span>
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              Express
+            </span>
+            <span className="tw-px-2 tw-py-1 tw-text-xs tw-rounded-full tw-bg-[#4fbdb9]/20 tw-text-[#4fbdb9]">
+              WavesurferJS
             </span>
           </div>
         </div>
@@ -168,13 +190,16 @@ export const Timeline = () => {
       className="vertical_timeline tw-w-full tw-bg-transparent tw-rounded-lg tw-font-sans md:tw-px-6"
       ref={containerRef}
     >
-      <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-10 tw-px-4 md:tw-px-8 lg:tw-px-10 tw-flex tw-flex-col tw-items-center">
-        <h2 className="tw-text-3xl tw-font-semibold tw-mb-2 tw-text-center tw-text-white tw-max-w-4xl">
-          Journey Through Code
-        </h2>
-        <p className="tw-text-gray-400 tw-text-base md:tw-text-lg tw-max-w-sm tw-text-center">
-          Building MVPs, scaling products, and crafting experiences that matter.
-        </p>
+      <div className="tw-max-w-7xl lg:tw-mx-32 tw-py-2 tw-px-4 md:tw-px-8 lg:tw-px-10 tw-flex tw-flex-col tw-items-center">
+        <div className="tw-flex tw-flex-col tw-items-center tw-text-center">
+          <h2 className="tw-text-4xl sm:tw-text-5xl tw-font-bold tw-mb-2 tw-text-center tw-text-white tw-max-w-4xl">
+            Journey Through Code
+          </h2>
+          <p className="tw-text-xl sm:tw-text-2xl tw-text-gray-400 tw-mt-3 tw-max-w-sm tw-text-center">
+            Building MVPs, scaling products, and crafting experiences that
+            matter.
+          </p>
+        </div>
       </div>
       <div ref={ref} className="tw-relative tw-max-w-7xl tw-pb-20">
         {timelineData.map((item, index) => (
