@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Verticalname from "../components/Verticalname";
 // Removed heavy icons to reduce AI-generated feel
@@ -55,8 +56,16 @@ const About = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
-          <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
-            <h2 className="tw-text-3xl tw-font-semibold">Experience</h2>
+          <div className="section_header tw-flex tw-items-center tw-justify-between tw-w-full tw-mb-6">
+            <div className="tw-flex tw-items-center tw-space-x-3">
+              <h2 className="tw-text-3xl tw-font-semibold">Highlights</h2>
+            </div>
+            <Link
+              to="/experience"
+              className="tw-text-sm tw-text-teal-400 hover:tw-text-teal-300 tw-no-underline"
+            >
+              View full experience →
+            </Link>
           </div>
 
           <div className="tw-mt-6 tw-space-y-8">
