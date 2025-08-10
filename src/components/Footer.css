@@ -1,11 +1,13 @@
-
 .footer-wrapper {
   display: flex;
   flex-direction: column;
 }
 .footer {
   width: 100%;
-  background-color: rgb(37, 37, 37);
+  /* Themed translucent background with subtle blur */
+  background-color: rgba(0, 18, 32, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 100;
   display: flex;
   position: fixed;
@@ -15,6 +17,7 @@
   height: 2.5rem;
   justify-content: space-between;
   margin-top: auto;
+  border-top: 1px solid rgba(79, 189, 186, 0.18);
 }
 .right {
   background-color: inherit;
@@ -37,9 +40,6 @@
   color: var(--primary-text-color);
   background-color: inherit;
   margin-top: 10px;
-}
-.footer > .left {
-  background-color: inherit;
 }
 
 .icons > li > a {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contactform from "../components/Contactform";
@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="tw-text-white">
       <Helmet>
         <title>Contact | Aaditya Chowdhury</title>
         <meta
@@ -18,14 +18,18 @@ const Contact = () => {
         <link rel="canonical" href="https://aadityachowdhury.dev/contact" />
       </Helmet>
       <Navbar />
-      <Fade clear delay={200} duration={1200}>
-        <Contactform />
-      </Fade>
-      <Fade bottom delay={350} duration={1400}>
-        <div className="Vertical_text">
-          <Verticalname />
-        </div>
-      </Fade>
+      <div className="tw-overflow-hidden">
+        <Fade clear delay={200} duration={1200}>
+          <Contactform />
+        </Fade>
+      </div>
+      <div className="tw-overflow-hidden">
+        <Fade bottom delay={350} duration={1400}>
+          <div className="Vertical_text">
+            <Verticalname />
+          </div>
+        </Fade>
+      </div>
       <Footer />
     </div>
   );

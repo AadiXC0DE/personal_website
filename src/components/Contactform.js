@@ -1,9 +1,9 @@
-import React from 'react';
-import './Contactform.css';
-import { SiGmail } from 'react-icons/si';
-import { AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
-import { FaLinkedin } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+import React from "react";
+import "./Contactform.css";
+import { SiGmail } from "react-icons/si";
+import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
+import Fade from "react-reveal/Fade";
 
 const Contactform = () => {
   return (
@@ -14,11 +14,11 @@ const Contactform = () => {
       <hr className="line"></hr>
       <Fade bottom duration={1300} delay={300}>
         <h2>
-          Got a project in mind? Book a call with me, and let's chat about how
-          we can work together.
+          Got a project in mind? Schedule a call with me, and let's chat about
+          how we can work together.
           <br />
           <br />
-          I'm always open to exciting projects — let's make something great!
+          I'm always open to exciting projects, let's ship something awesome!
         </h2>
       </Fade>
 
@@ -31,15 +31,24 @@ const Contactform = () => {
           <a
             href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/"
             target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin />
           </a>
 
-          <a href="https://github.com/AadiXC0DE" target="_blank">
+          <a
+            href="https://github.com/AadiXC0DE"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub />
           </a>
 
-          <a href="https://twitter.com/AadiChowdhury7" target="_blank">
+          <a
+            href="https://twitter.com/AadiChowdhury7"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillTwitterCircle />
           </a>
         </div>

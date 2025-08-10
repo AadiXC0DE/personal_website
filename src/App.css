@@ -1,8 +1,24 @@
 html {
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
-  background-color: #000000;
+  /* Show vertical scrollbar only when needed to avoid flicker on load */
+  overflow-y: auto;
+  /* Reserve space for the scrollbar to avoid layout shift when it appears */
+  scrollbar-gutter: stable both-edges;
+  background-color: #001220;
+  background-image: url("./assets/Haikei Blob Scene.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body {
+  min-height: 100%;
+  background-color: #001220;
+  background-image: url("./assets/Haikei Blob Scene.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 :root {
@@ -21,7 +37,7 @@ html {
 
 .Home_heading {
   color: var(--primary-text-color);
-  text-align: left;
+  text-align: center;
   margin-right: 7%;
   font-size: 1.2rem;
 }
@@ -37,13 +53,13 @@ html {
 
 .Home_heading_2 {
   color: #4fbdba;
-  text-align: left;
+  text-align: center;
   opacity: 1;
 }
 
 .Button_text {
   color: var(--primary-text-color);
-  text-align: left;
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -59,9 +75,6 @@ html {
   }
   .image {
     width: 0px;
-  }
-  html {
-    overflow: scroll;
   }
 }
 
@@ -80,20 +93,19 @@ html {
 
 .Vertical_text {
   z-index: 5;
-  position: absolute;
-  top: 0;
-  margin-top: 15%;
-  margin-left: 10px;
+  position: fixed;
+  top: 15vh;
+  left: 10px;
 }
 
 /*About page*/
 
 .about_container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 18%;
+  justify-content: center;
+  align-items: stretch;
   margin-left: 18%;
+  margin-right: 18%;
 }
 
 .about_heading {
@@ -158,7 +170,7 @@ html {
 }
 
 @media (max-width: 900px) {
-  .vertical_timeline{
+  .vertical_timeline {
     padding-left: 1%;
     padding-right: 1%;
     margin-left: 24px;
@@ -167,20 +179,20 @@ html {
 }
 
 @media (min-width: 901px) {
-  .vertical_timeline{
+  .vertical_timeline {
     margin-left: 18%;
     margin-right: 18%;
   }
 }
 
-.vertical_timeline{
+.vertical_timeline {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.vertical_timeline_container{
+.vertical_timeline_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +216,8 @@ html {
   background-color: #4fbdba;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   overflow-x: hidden;
 }
