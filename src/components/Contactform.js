@@ -31,15 +31,24 @@ const Contactform = () => {
           <a
             href="https://www.linkedin.com/in/aaditya-chowdhury-14a5a921b/"
             target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin />
           </a>
 
-          <a href="https://github.com/AadiXC0DE" target="_blank">
+          <a
+            href="https://github.com/AadiXC0DE"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub />
           </a>
 
-          <a href="https://twitter.com/AadiChowdhury7" target="_blank">
+          <a
+            href="https://twitter.com/AadiChowdhury7"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillTwitterCircle />
           </a>
         </div>

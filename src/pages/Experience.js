@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import Verticalname from "../components/Verticalname";
 import Fade from "react-reveal/Fade";
 import VerticalTimeline from "../components/VerticalTimeline";
-import { TypewriterEffect } from "../utils/TypewriterEffect";
 
 const Experience = () => {
   return (

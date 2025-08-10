@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import gastrogateLogo from "../assets/Gastrogate.png";
+
 import heroLogo from "../assets/Hero.png";
 import ownpathLogo from "../assets/Ownpath.svg";
 import philipsLogo from "../assets/Philips.png";
