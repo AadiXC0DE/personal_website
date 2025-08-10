@@ -18,7 +18,7 @@ const Contactform = () => {
           how we can work together.
           <br />
           <br />
-          I'm always open to exciting projects — let's make something great!
+          I'm always open to exciting projects, let's ship something awesome!
         </h2>
       </Fade>
 

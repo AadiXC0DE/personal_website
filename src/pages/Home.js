@@ -41,9 +41,9 @@ const Home = () => {
       </Helmet>
       <Navbar />
 
-      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-3 lg:tw-px-12 lg:tw-py-auto">
+      <div className="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between tw-px-3 lg:tw-px-12 lg:tw-pt-6 lg:tw-pb-4">
         {/* Main Text Section */}
-        <div className="Home_main_text tw-flex tw-flex-col tw-space-y-6 tw-pb-4">
+        <div className="Home_main_text tw-flex tw-flex-col tw-space-y-4 tw-pb-4">
           {/* Greeting with Typewriter Effect */}
           <TypewriterEffect
             text="Hi, I'm Aaditya Chowdhury"
@@ -71,19 +71,19 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="tw-text-xl lg:tw-text-2xl tw-text-gray-200 tw-leading-relaxed tw-max-w-2xl"
+              className="tw-text-2xl lg:tw-text-3xl tw-text-gray-200 tw-leading-relaxed tw-max-w-2xl"
             >
-              <span className="tw-font-semibold tw-text-[#4fbdba] tw-text-xl lg:tw-text-2xl">
+              <span className="tw-font-semibold tw-text-[#4fbdba] tw-text-2xl lg:tw-text-3xl">
                 I build
               </span>{" "}
-              <span className="tw-font-semibold tw-text-xl lg:tw-text-2xl tw-text-white">
+              <span className="tw-font-semibold tw-text-2xl lg:tw-text-3xl tw-text-white">
                 fast MVPs
               </span>
               {", "}
-              <span className="tw-font-semibold tw-text-xl lg:tw-text-2xl">
+              <span className="tw-font-semibold tw-text-2xl lg:tw-text-3xl">
                 AI tools
               </span>{" "}
-              <span className="tw-font-semibold tw-text-xl lg:tw-text-2xl">
+              <span className="tw-font-semibold tw-text-2xl lg:tw-text-3xl">
                 & delightful UIs
               </span>
             </motion.h2>
@@ -111,7 +111,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="tw-mt-4"
+              className="tw-mt-2"
             >
               <motion.a
                 href="https://calendly.com/aadityaz2077/one-on-one"
@@ -152,7 +152,7 @@ const Home = () => {
                   </svg>
                 </span>
               </motion.a>
-              <p className="tw-text-xs tw-text-gray-400 tw-mt-2 tw-ml-2">
+              <p className="tw-text-xs tw-text-gray-300 tw-mt-3 tw-ml-2">
                 Let’s talk about your next MVP
               </p>
             </motion.div>

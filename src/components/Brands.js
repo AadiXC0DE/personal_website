@@ -42,7 +42,7 @@ const Brands = () => {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="tw-text-[11px] tw-tracking-wider tw-uppercase tw-text-gray-500 tw-mb-2"
+            className="tw-text-[11px] tw-tracking-wider tw-uppercase tw-text-gray-500 tw-mb-3"
           >
             Worked with
           </motion.h2>
@@ -75,7 +75,11 @@ const Brands = () => {
                       <img
                         src={brand.logo}
                         alt={brand.name}
-                        className="tw-h-8 md:tw-h-7 tw-w-auto tw-object-contain tw-opacity-100 tw-transition"
+                        className={`${
+                          brand.name === "Philips"
+                            ? "tw-h-7 md:tw-h-6"
+                            : "tw-h-8 md:tw-h-7"
+                        } tw-w-auto tw-object-contain tw-opacity-100 tw-transition`}
                         style={{
                           filter:
                             "saturate(0) brightness(0) invert(1) contrast(2)",
