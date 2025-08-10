@@ -51,15 +51,41 @@ const Home = () => {
             cursorClassName="tw-w-1 tw-h-8 tw-bg-emerald-400"
           />
 
+          <div className="tw-overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="tw-inline-flex tw-items-center tw-gap-2"
+            >
+              <span className="tw-w-1.5 tw-h-1.5 tw-rounded-full tw-bg-[#4fbdba]" />
+              <span className="tw-inline-flex tw-items-center tw-rounded-full tw-border tw-border-gray-700 tw-px-3 tw-py-1 tw-text-[11px] tw-tracking-widest tw-uppercase tw-text-gray-400">
+                Software Engineer
+              </span>
+            </motion.div>
+          </div>
+
           {/* Subheading with Emphasis */}
           <div className="tw-overflow-hidden">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="tw-text-xl lg:tw-text-2xl tw-text-gray-300"
+              className="tw-text-xl lg:tw-text-2xl tw-text-gray-200 tw-leading-relaxed tw-max-w-2xl"
             >
-              Software Engineer • I build fast, clean, real-world apps.
+              <span className="tw-font-semibold tw-text-[#4fbdba] tw-text-xl lg:tw-text-2xl">
+                I build
+              </span>{" "}
+              <span className="tw-font-semibold tw-text-xl lg:tw-text-2xl tw-text-white">
+                fast MVPs
+              </span>
+              {", "}
+              <span className="tw-font-semibold tw-text-xl lg:tw-text-2xl">
+                AI tools
+              </span>{" "}
+              <span className="tw-font-semibold tw-text-xl lg:tw-text-2xl">
+                & delightful UIs
+              </span>
             </motion.h2>
           </div>
 
@@ -71,8 +97,8 @@ const Home = () => {
               transition={{ delay: 0.7, duration: 0.8 }}
               className="tw-text-lg tw-text-gray-400 tw-max-w-lg"
             >
-              From napkin sketches to polished MVPs. Need your next big thing
-              built? Let's make the internet a bit more awesome together.
+              From napkin sketch to shipped product. If you need something
+              useful on the web, I can build it.
             </motion.p>
           </div>
           <div className="tw-overflow-visible">
