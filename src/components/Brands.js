@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import PortalTooltip from "./PortalTooltip";
 
 import heroLogo from "../assets/Hero.png";
 import ownpathLogo from "../assets/Ownpath.svg";
@@ -24,14 +25,9 @@ const Brands = () => {
     rest: { scale: 1 },
     hover: { scale: 1.03 },
   };
-  const tooltipVariants = {
-    rest: { opacity: 0, y: 5, transition: { duration: 0.2, ease: "easeOut" } },
-    hover: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.2, ease: "easeIn", delay: 0.1 },
-    },
-  };
+
+  const [hoveredIndex, setHoveredIndex] = React.useState(null);
+  const anchorRefs = React.useRef([]);
 
   return (
     <div className="tw-bg-inherit">
@@ -62,6 +58,11 @@ const Brands = () => {
                 variants={brandVariants}
                 initial="rest"
                 whileHover="hover"
+                onHoverStart={() => setHoveredIndex(index)}
+                onHoverEnd={() =>
+                  setHoveredIndex((prev) => (prev === index ? null : prev))
+                }
+                ref={(el) => (anchorRefs.current[index] = el)}
                 className="tw-relative tw-pr-2 tw-border-r tw-border-white/10 last:tw-border-none last:tw-pr-0 last:tw-mr-0"
                 transition={{ duration: 0.2 }}
               >
@@ -96,11 +97,11 @@ const Brands = () => {
                   )}
                 </div>
 
-                {/* Tooltip */}
-                <motion.div
-                  variants={tooltipVariants}
-                  className="tw-absolute tw-bottom-full tw-mb-2 tw-left-1/2 -tw-translate-x-1/2 tw-z-10"
-                  style={{ pointerEvents: "none" }}
+                {/* Tooltip via portal to avoid clipping by overflow-hidden ancestors */}
+                <PortalTooltip
+                  anchorRef={{ current: anchorRefs.current[index] }}
+                  open={hoveredIndex === index}
+                  gap={8}
                 >
                   <div className="tw-bg-black/70 tw-backdrop-blur-sm tw-border tw-border-teal-500/20 tw-text-white tw-text-center tw-px-3 tw-py-2 tw-rounded-md tw-shadow-[0_6px_20px_rgba(0,0,0,0.35)] tw-whitespace-nowrap">
                     <p className="tw-font-semibold tw-text-sm">{brand.name}</p>
@@ -110,7 +111,7 @@ const Brands = () => {
                       </p>
                     )}
                   </div>
-                </motion.div>
+                </PortalTooltip>
               </motion.div>
             ))}
           </motion.div>
