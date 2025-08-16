@@ -17,7 +17,7 @@ const blogData = [
   },
   {
     id: 2,
-    title: "Understanding the Event Loop in JavaScript — Made Simple!",
+    title: "Understanding the Event Loop in JavaScript, Made Simple!",
     excerpt:
       "A simple explanation of the event loop in JavaScript, making it easy to understand for beginners.",
     date: "October 16, 2024",
@@ -30,15 +30,16 @@ const blogData = [
   },
   {
     id: 3,
-    title: "Coming Soon",
+    title:
+      "How I Ended Up Working as a Lead Dev for a Philips Project in College",
     excerpt:
-      "Stay tuned for my upcoming article on optimizing large language models for production environments.",
-    date: "TBA",
+      "Sharing my experience of working as a lead developer for a Philips Healthcare project in college.",
+    date: "October 16, 2024",
     image:
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: "https://dev.to/aadixc0de/coming-soon-1625",
+    link: "https://dev.to/aadixc0de/how-i-ended-up-working-as-a-lead-dev-for-a-philips-project-in-college-1j0d",
     external: true,
-    tags: ["AI", "LLMs"],
+    tags: ["AI", "react", "healthcare"],
   },
 ];
 
