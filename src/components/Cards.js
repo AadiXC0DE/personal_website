@@ -13,23 +13,24 @@ import sarazaiten from "../assets/sarazaiten.png";
 import caldy from "../assets/caldy.png";
 import craftmine from "../assets/craftmine.png";
 import serenity from "../assets/serenity.png";
+import neonkit from "../assets/neonkit.png";
 
 const projectsData = [
+  {
+    title: "Neonkit",
+    image: neonkit,
+    description:
+      "A neon themed set of React components, just copy and paste. Built with Framer Motion, React, and Tailwind CSS.",
+    link: "https://get-neonkit.vercel.app/",
+    badges: ["2025", "Featured", "In Production"],
+  },
   {
     title: "Caldy",
     image: caldy,
     description:
       "Caldy is a platform with Stunning calendar and powerful task management features to help you organize your life beautifully.",
     link: "https://caldy.vercel.app/",
-    badges: ["Featured", "In Production"],
-  },
-  {
-    title: "Serenity",
-    image: serenity,
-    description:
-      "Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon.",
-    link: "https://serenitycare.online/",
-    badges: ["AI-powered"],
+    badges: ["2025", "Featured", "In Production"],
   },
   {
     title: "CraftMine",
@@ -37,6 +38,7 @@ const projectsData = [
     description:
       "CraftMine is simple minecraft clone built with JS and Three.js for the web",
     link: "https://craft-mine.vercel.app/",
+    badges: ["2025", "Featured", "In Production"],
   },
   {
     title: "QR Ninja",
@@ -44,21 +46,31 @@ const projectsData = [
     description:
       "A cool QR code generator with NextJS and TailwindCSS. You can generate QR codes for URLs, text, and even download them as SVGs!",
     link: "https://qr-ninja.vercel.app/",
-    badges: ["Featured"],
+    badges: ["2024", "Featured", "In Production"],
+  },
+  {
+    title: "Serenity",
+    image: serenity,
+    description:
+      "Serenity is a AI powered therapy companion app powered by Gemini and elevenlabs. Built for Bolt hackathon. (Not maintained anymore, LLMs are costly! Checkout the source code)",
+    link: "https://github.com/AadiXC0DE/Serenity",
+    badges: ["2023", "AI-powered"],
   },
   {
     title: "Elabs Quiz",
     image: quiz,
     description:
-      "An internal quiz app for ELabs KIIT, built with ReactJS, Tailwind CSS and MongoDB. Now in use by 2000+ college students!",
-    link: "https://elabs-quiz.vercel.app/",
+      "An internal quiz app for ELabs KIIT, built with ReactJS, Tailwind CSS and MongoDB. Now in use by 2000+ college students! (Now maintained by Elabs team KIIT)",
+    link: "https://github.com/AadiXC0DE/Elabs-Quiz",
+    badges: ["2023"],
   },
   {
     title: "Sarazaiten",
     image: sarazaiten,
     description:
-      "A webapp built with ReactJS, Tailwind CSS, Framer animations and OpenAI's GPT-3.5 that makes learning DSA free and fun!",
+      "A webapp built with ReactJS, Tailwind CSS, Framer animations and OpenAI's GPT-3.5 that makes learning DSA free and fun! (Not maintained anymore)",
     link: "https://sarazaiten.netlify.app/",
+    badges: ["2023", "AI-powered"],
   },
   // Clones & older projects grouped below
   {
@@ -66,6 +78,7 @@ const projectsData = [
     image: youtube,
     description: "A working youtube clone built with React and MaterialUI",
     link: "https://capable-paletas-d20ffc.netlify.app/",
+    badges: ["2022"],
   },
   {
     title: "Netflix Clone",
@@ -73,6 +86,7 @@ const projectsData = [
     description:
       "A webapp built with ReactJS, TMDB API and axios to fetch data from the server.",
     link: "https://dynamic-sable-52dc19.netlify.app/",
+    badges: ["2022"],
   },
   {
     title: "Tesla Website Clone",
@@ -80,6 +94,7 @@ const projectsData = [
     description:
       "Clone of Tesla website built with React and styled components.",
     link: "https://clever-trifle-e934fc.netlify.app/",
+    badges: ["2023"],
   },
   {
     title: "Mapty APP",
@@ -87,6 +102,7 @@ const projectsData = [
     description:
       "A webapp to track all your daily workouts on the map. Made with Pure HTML, CSS and JS.",
     link: "https://spiffy-jelly-b513b8.netlify.app/",
+    badges: ["2023"],
   },
   {
     title: "NFT website on blockchain",
@@ -94,12 +110,14 @@ const projectsData = [
     description:
       "A React.js website to showcase your NFTs, currently in development. Check out the code on GitHub!",
     link: "https://github.com/AadiXC0DE/CryptoPunk",
+    badges: ["2023"],
   },
   {
     title: "React Chatapp",
     image: mock,
     description:
       "A chatapp built with React.js and firebase (coming soon!!). Check out the code on GitHub!",
+    badges: ["2023"],
   },
 ];
 
@@ -147,6 +165,31 @@ const Cards = () => {
                 <div className="card_content">
                   <h2 className="card_title">{project.title}</h2>
                   <p className="card_text">{project.description}</p>
+                  {project.badges && (
+                    <div className="tw-flex tw-flex-wrap tw-gap-2 tw-mb-3">
+                      {project.badges.map((badge, index) => (
+                        <span
+                          key={index}
+                          className={`tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md ${
+                            badge === "2025" ||
+                            badge === "2024" ||
+                            badge === "2023" ||
+                            badge === "2022"
+                              ? "tw-bg-blue-500/20 tw-text-blue-400 tw-border tw-border-blue-500/30"
+                              : badge === "Featured"
+                              ? "tw-bg-yellow-500/20 tw-text-yellow-400 tw-border tw-border-yellow-500/30"
+                              : badge === "In Production"
+                              ? "tw-bg-green-500/20 tw-text-green-400 tw-border tw-border-green-500/30"
+                              : badge === "AI-powered"
+                              ? "tw-bg-purple-500/20 tw-text-purple-400 tw-border tw-border-purple-500/30"
+                              : "tw-bg-gray-500/20 tw-text-gray-400 tw-border tw-border-gray-500/30"
+                          }`}
+                        >
+                          {badge}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   {project.link && (
                     <a
                       href={project.link}
