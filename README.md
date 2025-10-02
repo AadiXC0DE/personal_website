@@ -7,7 +7,6 @@ Welcome to my portfolio website! This site showcases my work as a software engin
 - JavaScript
 - CSS
 - Tailwind CSS
-- Node.js (for backend, if applicable)
 
 ## Installation Instructions
 1. Clone the repository:
