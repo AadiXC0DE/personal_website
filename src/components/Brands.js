@@ -14,6 +14,7 @@ const brands = [
   { name: "Ownpath", description: "", logo: ownpathLogo, showColon: true },
   { name: "Philips", description: "via Ownpath", logo: philipsLogo },
   { name: "Hero MotoCorp", description: "via Ownpath", logo: heroLogo },
+  { name: "koolio.ai", description: "via Ownpath", isText: true },
 ];
 
 const onBrandClick = () => {
@@ -68,7 +69,11 @@ const Brands = () => {
               >
                 <div className="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-bg-transparent">
                   {brand.isText ? (
-                    <span className="tw-text-white tw-font-bold tw-text-[14.5px] md:tw-text-[16px]">
+                    <span className={`tw-text-white tw-font-bold ${
+                      brand.name === "koolio.ai" 
+                        ? "tw-text-[15.5px] md:tw-text-[17px]" 
+                        : "tw-text-[14.5px] md:tw-text-[16px]"
+                    }`}>
                       {brand.name}
                     </span>
                   ) : brand.logo ? (
