@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Verticalname from "../components/Verticalname";
 // Removed heavy icons to reduce AI-generated feel
@@ -56,16 +55,8 @@ const About = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="experience_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
         >
-          <div className="section_header tw-flex tw-flex-col sm:tw-flex-row tw-items-start sm:tw-items-center tw-justify-between tw-w-full tw-mb-6 tw-gap-3 sm:tw-gap-0">
-            <div className="tw-flex tw-items-center tw-space-x-3">
-              <h2 className="tw-text-3xl tw-font-semibold">Highlights</h2>
-            </div>
-            <Link
-              to="/experience"
-              className="tw-text-sm tw-text-teal-400 hover:tw-text-teal-300 tw-no-underline"
-            >
-              View full experience →
-            </Link>
+          <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
+            <h2 className="tw-text-3xl tw-font-semibold">Highlights</h2>
           </div>
 
           <div className="tw-mt-6 tw-space-y-8">
@@ -88,76 +79,220 @@ const About = () => {
                 </span>
               </div>
 
-              <div className="tw-mt-3 tw-space-y-3">
-                <div className="tw-flex tw-items-start">
-                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
-                  <p className="tw-text-gray-300">
-                    Developed a health tech app for{" "}
-                    <span className="tw-font-medium tw-text-white">
-                      Philips Innovation
-                    </span>
-                    , enabling faster health scans and boosting user engagement
-                    by{" "}
-                    <span className="tw-text-white tw-font-semibold">25%</span>.
+              <div className="tw-mt-6 tw-space-y-8">
+                {/* Philips Innovation */}
+                <motion.div
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                  className="tw-border-l-2 tw-border-blue-500 tw-pl-0 tw-py-2"
+                >
+                  <h4 className="tw-text-lg tw-font-semibold tw-text-blue-400">
+                    Philips Innovation
+                  </h4>
+                  <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
+                    <p className="tw-text-gray-400 tw-text-sm">
+                      Software Engineer • Led Heartprint Mobile App Development
+                    </p>
+                  </div>
+
+                  <div className="tw-mt-3 tw-space-y-3">
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-blue-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Led development as the sole engineer for a{" "}
+                        <span className="tw-font-medium tw-text-white">
+                          PWA health app
+                        </span>{" "}
+                        that scans fingers to capture vitals and predict diseases using open-source algorithms and health questionnaires, boosting user engagement by{" "}
+                        <span className="tw-text-white tw-font-semibold">25%</span>.
+                      </p>
+                    </div>
+
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-blue-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Built scalable backend infrastructure with{" "}
+                        <span className="tw-font-medium tw-text-white">
+                          React, D3.js, Express.js, and Careplix SDK
+                        </span>
+                        , serving thousands of users through the Heartprint mobile app with real-time data processing and advanced health analytics.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Hero MotoCorp */}
+                <motion.div
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.7, duration: 0.6 }}
+                  className="tw-border-l-2 tw-border-orange-500 tw-pl-0 tw-py-2"
+                >
+                  <h4 className="tw-text-lg tw-font-semibold tw-text-orange-400">
+                    Hero MotoCorp
+                  </h4>
+                  <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
+                    <p className="tw-text-gray-400 tw-text-sm">
+                      Software Engineer • AI & Design Tools
+                    </p>
+                  </div>
+
+                  <div className="tw-mt-3 tw-space-y-3">
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-orange-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Developed AI-powered tools including design analyzer and writing assistant to enhance design team workflows, making the design process faster and more efficient for{" "}
+                        <span className="tw-font-medium tw-text-white">
+                          Hero MotoCorp
+                        </span>
+                        's creative teams.
+                      </p>
+                    </div>
+
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-orange-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Maintained and built multiple frontend components for the{" "}
+                        <span className="tw-font-medium tw-text-white">
+                          Hero Echo Webapp
+                        </span>
+                        , an internal design system tool that streamlined component reusability and design consistency across Hero Vida's digital platforms.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Koolio.ai */}
+                <motion.div
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.8, duration: 0.6 }}
+                  className="tw-border-l-2 tw-border-purple-500 tw-pl-0 tw-py-2"
+                >
+                  <h4 className="tw-text-lg tw-font-semibold tw-text-purple-400">
+                    Koolio.ai
+                  </h4>
+                  <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
+                    <p className="tw-text-gray-400 tw-text-sm">
+                      Lead Frontend Engineer • AI Audio Editor
+                    </p>
+                  </div>
+
+                  <div className="tw-mt-3 tw-space-y-3">
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-purple-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Led development from scratch as the sole frontend engineer for
+                        AI-powered audio editor, serving thousands of active users.
+                      </p>
+                    </div>
+
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-purple-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Implemented advanced audio editing features including transcript-based editing, waveform manipulation, AI-generated sound effects, drag-and-drop functionality, and professional-grade operations comparable to Adobe Audition and Descript.
+                      </p>
+                    </div>
+
+                    <AnimatePresence>
+                      {(expandedSections["koolio"] || window.innerWidth >= 640) && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          className="tw-overflow-hidden"
+                        >
+                          <div className="tw-flex tw-items-start">
+                            <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-purple-400 tw-flex-shrink-0"></div>
+                            <p className="tw-text-gray-300">
+                              Built with{" "}
+                              <span className="tw-font-medium tw-text-white">
+                                React, WavesurferJS, FFmpeg, and Express.js
+                              </span>
+                              , delivering a robust audio editing platform used by content creators and professionals worldwide.
+                            </p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+
+                  {/* Toggle button - only visible on mobile */}
+                  <p
+                    onClick={() => toggleSection("koolio")}
+                    className="tw-text-purple-400 tw-text-sm tw-mt-2 tw-ml-[18px] sm:tw-hidden tw-cursor-pointer tw-hover:underline"
+                  >
+                    {expandedSections["koolio"] ? "See less" : "See more"}
                   </p>
-                </div>
+                </motion.div>
 
-                <AnimatePresence>
-                  {(expandedSections["ownpath"] ||
-                    window.innerWidth >= 640) && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                      className="tw-space-y-3 tw-overflow-hidden"
-                    >
-                      <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
-                        <p className="tw-text-gray-300">
-                          Created frontend with React and Tailwind; engineered
-                          backend APIs using Node.js and MongoDB for real-time
-                          data processing.
-                        </p>
-                      </div>
+                {/* Realfast AI */}
+                <motion.div
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.85, duration: 0.6 }}
+                  className="tw-border-l-2 tw-border-emerald-500 tw-pl-0 tw-py-2"
+                >
+                  <h4 className="tw-text-lg tw-font-semibold tw-text-emerald-400">
+                    Realfast AI
+                  </h4>
+                  <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
+                    <p className="tw-text-gray-400 tw-text-sm">
+                      Frontend Developer • Official Website
+                    </p>
+                  </div>
 
-                      <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
-                        <p className="tw-text-gray-300">
-                          Built AI tools such as design analyzer and writing
-                          assistant to enhance design workflows for{" "}
-                          <span className="tw-font-medium tw-text-white">
-                            Hero MotoCorp
-                          </span>
-                          . Contributed to the{" "}
-                          <span className="tw-font-medium tw-text-white">
-                            Hero Echo Webapp
-                          </span>
-                        </p>
-                      </div>
+                  <div className="tw-mt-3 tw-space-y-3">
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-emerald-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Built multiple frontend components for the Realfast AI official website, creating engaging user interfaces with modern React patterns and responsive design principles.
+                      </p>
+                    </div>
 
-                      <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
-                        <p className="tw-text-gray-300">
-                          Working on complete frontend from scratch as the lead
-                          dev for a JS based AI Audio Editor app for a popular{" "}
-                          <span className="tw-font-medium tw-text-white">
-                            San Francisco based startup
-                          </span>
-                          .
-                        </p>
-                      </div>
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-emerald-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Implemented smooth animations and micro-interactions using{" "}
+                        <span className="tw-font-medium tw-text-white">
+                          Framer Motion
+                        </span>
+                        , enhancing user experience and visual appeal across all platform pages and components.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
 
-                      <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
-                        <p className="tw-text-gray-300">
-                          Developed AI agents for designer website analysis
-                          using LLM and LangChain.
-                        </p>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {/* General Ownpath Work */}
+                <motion.div
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.9, duration: 0.6 }}
+                  className="tw-border-l-2 tw-border-teal-500 tw-pl-0 tw-py-2"
+                >
+                  <h4 className="tw-text-lg tw-font-semibold tw-text-teal-400">
+                    Additional Projects
+                  </h4>
+
+                  <div className="tw-mt-3 tw-space-y-3">
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Developed AI agents for designer website analysis
+                        using LLM and LangChain.
+                      </p>
+                    </div>
+
+                    <div className="tw-flex tw-items-start">
+                      <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
+                      <p className="tw-text-gray-300">
+                        Built WhatsApp chatbot for job posting and application management for the Ownpath community, automating recruitment processes and improving hiring efficiency.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
 
               {/* Toggle button - only visible on mobile */}
@@ -220,7 +355,7 @@ const About = () => {
 
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                   <p className="tw-text-gray-300">
                     Developed essential components for a React-based admin
                     platform with GraphQL integration.
@@ -238,9 +373,13 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                         <p className="tw-text-gray-300">
-                          Built fuzzy search functionality reducing search times
+                          Built fuzzy search functionality in the{" "}
+                          <span className="tw-font-medium tw-text-white">
+                            Gastrogate mobile app
+                          </span>{" "}
+                          used by thousands in Sweden, reducing search times
                           by{" "}
                           <span className="tw-text-white tw-font-semibold">
                             50%
@@ -250,7 +389,7 @@ const About = () => {
                       </div>
 
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                         <p className="tw-text-gray-300">
                           Increased user engagement by{" "}
                           <span className="tw-text-white tw-font-semibold">
@@ -277,6 +416,9 @@ const About = () => {
                   React
                 </span>
                 <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-indigo-500/10 tw-text-indigo-400">
+                  TypeScript
+                </span>
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-indigo-500/10 tw-text-indigo-400">
                   GraphQL
                 </span>
                 <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-indigo-500/10 tw-text-indigo-400">
@@ -297,18 +439,24 @@ const About = () => {
               </h3>
               <div className="tw-flex tw-flex-col sm:tw-flex-row sm:tw-justify-between sm:tw-items-center tw-mt-1">
                 <p className="tw-text-gray-400 tw-text-sm">
-                  Web Dev & NLP Intern • 2023 - 2023
+                  <span className="tw-font-bold tw-text-white">Founding Engineer</span> • 2023 - 2023
                 </p>
-                <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-gray-300 tw-border tw-border-gray-700 tw-w-fit tw-mt-1 sm:tw-mt-0">
-                  IIT Mandi
-                </span>
+                <div className="tw-flex tw-items-center tw-gap-2 tw-mt-1 sm:tw-mt-0">
+                  <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-amber-500/20 tw-text-amber-400 tw-rounded-full tw-border tw-border-amber-500/30">
+                    Acquired by Adda247
+                  </span>
+                  <span className="tw-text-xs tw-px-2 tw-py-1 tw-bg-gray-800 tw-rounded-full tw-text-gray-300 tw-border tw-border-gray-700 tw-w-fit">
+                    IIT Mandi
+                  </span>
+                </div>
               </div>
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                   <p className="tw-text-gray-300">
-                    Created 10+ chatbot UIs and optimized LLMs for faster
-                    responses.
+                    Created 10+ chatbot UIs and optimized LLMs achieving{" "}
+                    <span className="tw-text-white tw-font-semibold">50%</span>{" "}
+                    faster inference for EdTech applications.
                   </p>
                 </div>
 
@@ -323,15 +471,33 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                         <p className="tw-text-gray-300">
-                          Later Joined as founding engineer, led development of
-                          an edTech chatbot resulting in
+                          As founding engineer, led development of
+                          an EdTech chatbot platform resulting in
                           <span className="tw-text-white tw-font-semibold">
                             {" "}
                             acquisition by Adda247
                           </span>
                           .
+                        </p>
+                      </div>
+
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
+                        <p className="tw-text-gray-300">
+                          Created and optimized RVC (Retrieval-based Voice Conversion) models for voice synthesis applications.
+                        </p>
+                      </div>
+
+                      <div className="tw-flex tw-items-start">
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
+                        <p className="tw-text-gray-300">
+                          Developed AI agents using{" "}
+                          <span className="tw-font-medium tw-text-white">
+                            Python and LangChain
+                          </span>{" "}
+                          to solve complex university-level mathematics questions with high accuracy.
                         </p>
                       </div>
                     </motion.div>
@@ -348,6 +514,9 @@ const About = () => {
               </p>
 
               <div className="tw-flex tw-flex-wrap tw-gap-2 tw-mt-3 tw-pl-[18px]">
+                <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-amber-500/10 tw-text-amber-400">
+                  Python
+                </span>
                 <span className="tw-px-2 tw-py-1 tw-text-xs tw-font-medium tw-rounded-md tw-bg-amber-500/10 tw-text-amber-400">
                   LLMs
                 </span>
@@ -381,7 +550,7 @@ const About = () => {
 
               <div className="tw-mt-3 tw-space-y-3">
                 <div className="tw-flex tw-items-start">
-                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                  <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                   <p className="tw-text-gray-300">
                     Created engaging UX through image optimization and code
                     refinement using React, JavaScript, Styled Components, and
@@ -399,7 +568,7 @@ const About = () => {
                       className="tw-space-y-3 tw-overflow-hidden"
                     >
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                         <p className="tw-text-gray-300">
                           Developed responsive SPAs with MUI, Tailwind CSS, and
                           Next.js.
@@ -407,7 +576,7 @@ const About = () => {
                       </div>
 
                       <div className="tw-flex tw-items-start">
-                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400"></div>
+                        <div className="tw-mt-2 tw-mr-3 tw-h-2 tw-w-2 tw-rounded-full tw-bg-teal-400 tw-flex-shrink-0"></div>
                         <p className="tw-text-gray-300">
                           Optimized platform with Express.js and AWS, boosting
                           user base by{" "}
@@ -451,88 +620,6 @@ const About = () => {
                   MUI
                 </span>
               </div>
-            </motion.div>
-          </div>
-        </motion.div>
-
-        {/* Freelance & MVP Work Section - Improved */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1 }}
-          className="freelance_section tw-flex tw-flex-col tw-items-start tw-bg-black/30 tw-backdrop-blur-sm tw-border tw-border-white/10 tw-rounded-xl tw-shadow-none tw-transition-shadow tw-p-6 sm:tw-p-8 tw-w-full md:tw-w-full lg:tw-w-full tw-mt-10 tw-mb-10"
-        >
-          <div className="section_header tw-flex tw-items-center tw-space-x-3 tw-mb-6">
-            <h2 className="tw-text-3xl tw-font-semibold">
-              Freelance & MVP Work
-            </h2>
-          </div>
-
-          <div className="tw-w-full">
-            <motion.div
-              initial={{ x: -10, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 1.3, duration: 0.6 }}
-              className="tw-mb-5 tw-border-l-2 tw-border-teal-500/40 tw-pl-0 tw-py-2"
-            >
-              <h3 className="tw-text-xl tw-font-semibold tw-text-teal-400">
-                MVP Development
-              </h3>
-              <p className="tw-text-gray-300 tw-mt-3">
-                I bring MVPs to life through focused, impactful development. As
-                a founding engineer at Symmulate Labs, I helped create an
-                educational LLM chatbot, later acquired by{" "}
-                <span className="tw-text-white tw-font-semibold">Adda247</span>.
-              </p>
-            </motion.div>
-
-            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 tw-mt-6">
-              <motion.div
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 1.4, duration: 0.6 }}
-                className="tw-bg-black/20 tw-p-5 tw-rounded-lg tw-border tw-border-white/10 tw-hover:border-white/20 tw-transition-all tw-duration-300 hover:tw-translate-y-[-2px] hover:tw-shadow-md hover:tw-shadow-black/40"
-              >
-                <div className="tw-text-[#4fbdb9] tw-mb-2 tw-text-sm tw-font-medium">
-                  What I do
-                </div>
-                <h4 className="tw-text-lg tw-font-medium tw-text-white tw-mb-2">
-                  Rapid Prototyping
-                </h4>
-                <p className="tw-text-gray-300">
-                  Developed MVPs for clients focused on user experience and
-                  rapid deployment.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.6 }}
-                className="tw-bg-black/20 tw-p-5 tw-rounded-lg tw-border tw-border-white/10 tw-hover:border-white/20 tw-transition-all tw-duration-300 hover:tw-translate-y-[-2px] hover:tw-shadow-md hover:tw-shadow-black/40"
-              >
-                <div className="tw-text-[#4fbdb9] tw-mb-2 tw-text-sm tw-font-medium">
-                  How it ships
-                </div>
-                <h4 className="tw-text-lg tw-font-medium tw-text-white tw-mb-2">
-                  Idea to Product
-                </h4>
-                <p className="tw-text-gray-300">
-                  Transformed ideas into robust, functional prototypes ready for
-                  market validation.
-                </p>
-              </motion.div>
-            </div>
-
-            <motion.div
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.6, duration: 0.6 }}
-              className="tw-mt-6 tw-p-4 tw-bg-gradient-to-r tw-from-teal-500/10 tw-to-transparent tw-rounded-lg tw-border-l-4 tw-border-teal-500"
-            >
-              <p className="tw-text-white tw-font-medium">
-                Have an idea? Let's connect and make it happen!
-              </p>
             </motion.div>
           </div>
         </motion.div>

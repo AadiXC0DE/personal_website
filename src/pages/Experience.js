@@ -6,7 +6,6 @@ import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import Verticalname from "../components/Verticalname";
 import Fade from "react-reveal/Fade";
-import VerticalTimeline from "../components/VerticalTimeline";
 
 const Experience = () => {
   return (
@@ -20,9 +19,6 @@ const Experience = () => {
         <link rel="canonical" href="https://aadityachowdhury.dev/experience" />
       </Helmet>
       <Navbar />
-      <div className="vertical_timeline_container">
-        <VerticalTimeline />
-      </div>
       <Cards />
       <Fade bottom delay={450} duration={1400}>
         <div className="Vertical_text">
