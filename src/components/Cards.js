@@ -129,7 +129,7 @@ const Cards = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="experience-heading tw-mt-8"
+          className="experience-heading"
         >
           Personal Projects
         </motion.h1>
