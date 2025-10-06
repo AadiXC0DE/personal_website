@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const navCheck = document.getElementById('nav-check');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (navRef.current && !navRef.current.contains(event.target) && navCheck.checked) {
+        navCheck.checked = false;
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav ref={navRef}>
       <div className="nav">
         <input type="checkbox" id="nav-check"></input>
         <div className="nav-btn">
