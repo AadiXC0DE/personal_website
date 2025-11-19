@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Home, User, Briefcase, FolderGit2, PenTool, Mail, Zap } from 'lucide-react';
+import { Home, User, Briefcase, FolderGit2, PenTool, Mail } from 'lucide-react';
 import { NavItem } from '../types';
 
 const NAV_ITEMS: NavItem[] = [
   { id: 'home', label: 'Home', icon: <Home size={20} /> },
   { id: 'about', label: 'About', icon: <User size={20} /> },
-  { id: 'impact', label: 'Impact', icon: <Zap size={20} /> },
   { id: 'experience', label: 'Work', icon: <Briefcase size={20} /> },
   { id: 'projects', label: 'Projects', icon: <FolderGit2 size={20} /> },
   { id: 'writing', label: 'Blog', icon: <PenTool size={20} /> },
