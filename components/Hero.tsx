@@ -6,7 +6,7 @@ import { SOCIALS } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center px-6 sm:px-12 lg:px-24 pt-32 pb-12 max-w-7xl mx-auto relative overflow-hidden">
+    <section id="home" className="min-h-screen flex flex-col justify-center px-6 sm:px-12 lg:px-24 pt-12 pb-12 max-w-7xl mx-auto relative overflow-hidden">
       
       {/* Vibrant Aurora Background Gradients - Enhanced */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-b from-indigo-500/10 via-purple-500/10 to-transparent rounded-full blur-[120px] -z-10 mix-blend-multiply animate-pulse" />
