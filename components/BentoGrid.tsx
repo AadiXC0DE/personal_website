@@ -30,9 +30,9 @@ const GitHubGrid = () => {
           {Array.from({ length: days }).map((_, j) => {
              const val = Math.random();
              let color = 'bg-zinc-800';
-             if (val > 0.85) color = 'bg-emerald-500';
+             if (val > 0.75) color = 'bg-emerald-500';
              else if (val > 0.65) color = 'bg-emerald-700';
-             else if (val > 0.4) color = 'bg-emerald-900';
+             else if (val > 0.3) color = 'bg-emerald-900';
              
              return (
                <div key={j} className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-[2px] ${color} transition-all hover:opacity-80`} />
