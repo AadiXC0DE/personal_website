@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
             aadityaz2077@gmail.com
           </a>
 
-          <div className="flex justify-center gap-8 mb-16">
+          <div className="flex justify-center gap-4 sm:gap-8 mb-16">
             {SOCIALS.map((social) => (
               <a
                 key={social.name}
