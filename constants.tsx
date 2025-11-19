@@ -148,7 +148,7 @@ export const PROJECTS: Project[] = [
     status: 'Featured',
     year: '2025',
     link: 'https://get-neonkit.vercel.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: '/neonkit.png',
   },
   {
     title: 'Caldy',
@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
     status: 'Featured',
     year: '2025',
     link: 'https://caldy.vercel.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2069&auto=format&fit=crop',
+    imageUrl: '/caldy.png',
   },
   {
     title: 'CraftMine',
@@ -166,7 +166,7 @@ export const PROJECTS: Project[] = [
     status: 'Featured',
     year: '2025',
     link: 'https://craft-mine.vercel.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=2074&auto=format&fit=crop',
+    imageUrl: '/craftmine.png',
   },
   {
     title: 'QR Ninja',
@@ -175,7 +175,7 @@ export const PROJECTS: Project[] = [
     status: 'In Production',
     year: '2024',
     link: 'https://qr-ninja.vercel.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: '/qr.png',
   },
   {
     title: 'Serenity',
@@ -184,7 +184,7 @@ export const PROJECTS: Project[] = [
     status: 'AI-Powered',
     year: '2023',
     link: 'https://github.com/AadiXC0DE/Serenity',
-    imageUrl: 'https://images.unsplash.com/photo-1544367563-12123d8965cd?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: '/serenity.png',
   },
   {
     title: 'Sarazaiten',
@@ -193,7 +193,7 @@ export const PROJECTS: Project[] = [
     status: 'AI-Powered',
     year: '2023',
     link: 'https://sarazaiten.netlify.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: '/sarazaiten.png',
   },
   {
     title: 'Elabs Quiz',
@@ -202,7 +202,7 @@ export const PROJECTS: Project[] = [
     status: 'In Production',
     year: '2023',
     link: 'https://github.com/AadiXC0DE/Elabs-Quiz',
-    imageUrl: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: '/quiz.png',
   },
   {
     title: 'Tesla Clone',
@@ -211,7 +211,7 @@ export const PROJECTS: Project[] = [
     status: 'Archived',
     year: '2023',
     link: 'https://clever-trifle-e934fc.netlify.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=2071&auto=format&fit=crop',
+    imageUrl: '/tesla.png',
   },
   {
     title: 'Mapty App',
@@ -220,7 +220,7 @@ export const PROJECTS: Project[] = [
     status: 'Archived',
     year: '2023',
     link: 'https://spiffy-jelly-b513b8.netlify.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=2069&auto=format&fit=crop',
+    imageUrl: '/mapty.png',
   },
   {
     title: 'Youtube Clone',
@@ -229,7 +229,7 @@ export const PROJECTS: Project[] = [
     status: 'Archived',
     year: '2022',
     link: 'https://capable-paletas-d20ffc.netlify.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: '/youtube.png',
   },
   {
     title: 'Netflix Clone',
@@ -238,7 +238,7 @@ export const PROJECTS: Project[] = [
     status: 'Archived',
     year: '2022',
     link: 'https://dynamic-sable-52dc19.netlify.app/',
-    imageUrl: 'https://images.unsplash.com/photo-1574375927938-d5a98e8efe85?q=80&w=2069&auto=format&fit=crop',
+    imageUrl: '/netflix.png',
   },
   {
     title: 'CryptoPunk',
@@ -247,7 +247,7 @@ export const PROJECTS: Project[] = [
     status: 'In Development',
     year: '2023',
     link: 'https://github.com/AadiXC0DE/CryptoPunk',
-    imageUrl: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: '/crypto.jpg',
   },
   {
     title: 'React Chatapp',
