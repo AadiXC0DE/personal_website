@@ -147,7 +147,7 @@ const ExperienceCard: React.FC<{ exp: ExperienceItem; index: number }> = ({ exp,
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 px-6 sm:px-12 lg:px-24 max-w-5xl mx-auto">
+    <section id="experience" className="py-20 px-3 sm:px-12 lg:px-24 max-w-5xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
