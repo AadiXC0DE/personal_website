@@ -51,9 +51,9 @@ const Speaking: React.FC = () => {
         >
            {/* Image Placeholder for Event/Speaking */}
            <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent z-10"></div>
-           <img 
-             src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop" 
-             alt="Speaking Event" 
+           <img
+             src="/elabs.JPG"
+             alt="Speaking Event"
              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
            />
            <div className="absolute bottom-6 left-6 z-20">
