@@ -25,11 +25,11 @@ const App: React.FC = () => {
         
         <Experience />
 
-        {/* Cool Moments - Zig-Zag Layout */}
+        {/* Highlights Reel - Curated Stories */}
         <section className="px-6 sm:px-12 lg:px-24 max-w-7xl mx-auto w-full py-16">
              <h3 className="text-3xl font-bold text-zinc-900 text-center mb-16 flex items-center justify-center gap-2">
              <Sparkles className="text-amber-400" fill="currentColor" size={24} />
-             Cool Moments
+             Highlights
            </h3>
            
             <div className="flex flex-col gap-24">
