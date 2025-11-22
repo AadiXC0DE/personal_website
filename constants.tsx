@@ -293,6 +293,6 @@ export const SPEAKING: SpeakingItem[] = [
     role: 'Subject Matter Expert',
     date: '2022 - 2023',
     description: 'Mentored hundreds of students in Frontend Development. Conducted in-person sessions on React, JS, and Modern Web standards.',
-    stats: '200+ Students Taught'
+    stats: '1000+ Students Taught'
   }
 ];
