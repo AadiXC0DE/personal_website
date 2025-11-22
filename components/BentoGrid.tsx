@@ -85,7 +85,7 @@ const BentoGrid: React.FC = () => {
               Engineering + Design
             </h2>
             <p className="text-zinc-600 leading-relaxed mb-6 text-sm sm:text-base max-w-lg">
-              I bridge the gap between engineering and design. My work focuses on performance, accessibility, and creating "magical" interactions.
+              I've shipped products for industry giants like <strong>Philips</strong> and <strong>Hero Motocorp</strong>, and built AI-powered platforms for startups like <strong>Koolio.ai</strong> & <strong>Realfast.ai</strong>. From healthcare apps to enterprise design systems, I turn complex engineering challenges into seamless, magical user experiences.
             </p>
             <div className="flex flex-wrap gap-2">
                <SkillTag icon={Layout} label="React/Next.js" color="bg-blue-500" />
