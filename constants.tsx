@@ -1,5 +1,6 @@
 import { Project, ExperienceItem, BlogPost, SpeakingItem, TweetMoment } from './types';
 import { Github, Linkedin, Twitter, Mail, Calendar } from 'lucide-react';
+
 import React from 'react';
 
 export const SOCIALS = [
@@ -71,6 +72,8 @@ export const MOMENTS: TweetMoment[] = [
   }
 ];
 
+
+
 export const EXPERIENCE: ExperienceItem[] = [
   {
     company: 'Ownpath',
@@ -79,35 +82,35 @@ export const EXPERIENCE: ExperienceItem[] = [
     location: 'Hybrid',
     description: "I serve as a lead engineer for enterprise clients, delivering high-impact solutions across healthcare, automotive, and AI sectors.",
     techStack: ['React', 'Node.js', 'MongoDB', 'LangChain'],
-    logoUrl: 'https://logo.clearbit.com/ownpath.com',
+    logoUrl: `https://img.logo.dev/ownpath.com?token=${import.meta.env.VITE_LOGO_ENV || ''}`,
     subRoles: [
       {
         title: 'Philips Innovation',
         role: 'Led Heartprint Mobile App Development',
         description: 'Acted as the sole lead engineer for Heartprint, a PWA health app. Built a system that scans fingers to capture vitals and predicts diseases. Optimizations boosted user engagement by 25%.',
         stack: ['React', 'D3.js', 'Careplix SDK'],
-        logoUrl: 'https://logo.clearbit.com/philips.co.in'
+        logoUrl: `https://img.logo.dev/philips.co.in?token=${import.meta.env.VITE_LOGO_ENV || ''}`
       },
       {
         title: 'Hero MotoCorp',
         role: 'AI & Design Tools Engineer',
         description: 'Developed internal AI-powered design analyzers and writing assistants. Maintained the Hero Echo Design System used across all Vida digital platforms.',
         stack: ['React', 'AI/LLMs', 'Internal Tools'],
-        logoUrl: 'https://logo.clearbit.com/heromotocorp.com'
+        logoUrl: `https://img.logo.dev/heromotocorp.com?token=${import.meta.env.VITE_LOGO_ENV || ''}`
       },
       {
         title: 'Koolio.ai',
         role: 'Lead Frontend Engineer',
         description: 'Built an AI audio editor from scratch (Adobe Audition for web). Implemented transcript-based editing, waveform manipulation, and FFmpeg integration for thousands of users.',
         stack: ['React', 'WavesurferJS', 'FFmpeg'],
-        logoUrl: 'https://logo.clearbit.com/koolio.ai'
+        logoUrl: `https://img.logo.dev/koolio.ai?token=${import.meta.env.VITE_LOGO_ENV || ''}`
       },
       {
         title: 'Realfast AI',
         role: 'Frontend Developer',
         description: 'Built official website components focusing on high-end interactions using Framer Motion for a buttery smooth user experience.',
         stack: ['React', 'Framer Motion'],
-        logoUrl: 'https://logo.clearbit.com/realfast.ai'
+        logoUrl: `https://img.logo.dev/realfast.ai?token=${import.meta.env.VITE_LOGO_ENV || ''}`
       }
     ],
   },
@@ -118,7 +121,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     location: 'Sweden (Remote)',
     description: <span>Optimized the core platform for a Swedish food-tech company. Designed admin components and implemented fuzzy search reducing timing by <strong>50%</strong> and improving quality by <strong>25%</strong>. Increased user engagement by <strong>30%</strong> through data-driven UI improvements.</span>,
     techStack: ['React', 'TypeScript', 'GraphQL', 'Expo'],
-    logoUrl: 'https://logo.clearbit.com/gastrogate.com'
+    logoUrl: `https://img.logo.dev/gastrogate.com?token=${import.meta.env.VITE_LOGO_ENV || ''}`
   },
   {
     company: 'Symmulate Labs',
@@ -127,7 +130,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     location: 'IIT Mandi',
     description: <span>My first startup experience building EdTech AI tools. <strong>Acquired by Adda247</strong>. Led frontend development using Python, JS, and Flask. Achieved <strong>50% faster</strong> response times for LLM and RVC voice AI models. Created <strong>10+ chatbot UIs</strong> for various EdTech clients.</span>,
     techStack: ['Python', 'LLMs', 'Chatbots'],
-    logoUrl: 'https://logo.clearbit.com/adda247.com'
+    logoUrl: `https://img.logo.dev/adda247.com?token=${import.meta.env.VITE_LOGO_ENV || ''}`
   },
   {
     company: 'ELabs KIIT',
