@@ -163,6 +163,15 @@ export const PROJECTS: Project[] = [
     imageUrl: '/caldy.png',
   },
   {
+    title: 'MyBento',
+    description: 'Craft beautiful Bento Grids in seconds. The ultimate visual prototyping tool for developers. Drag, drop, resize, and export pure Tailwind CSS code instantly.',
+    tags: ['Tailwind', 'Design Tool', 'React'],
+    status: 'In Production',
+    year: '2025',
+    link: 'https://mybento.vercel.app/',
+    imageUrl: '/bento.png',
+  },
+  {
     title: 'CraftMine',
     description: 'A simple Minecraft clone built for the web using Three.js.',
     tags: ['Three.js', 'WebGL', 'Game Dev'],
